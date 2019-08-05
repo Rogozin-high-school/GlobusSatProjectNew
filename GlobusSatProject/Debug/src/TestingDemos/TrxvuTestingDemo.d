@@ -11,7 +11,7 @@ src/TestingDemos/TrxvuTestingDemo.d: \
  C:\ISIS\workspace\GlobusSatProject\GlobusSatProject\src/TestingConfigurations.h \
  C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/include/hal/Utility/util.h \
  C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/include/hal/Timing/Time.h \
- C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include/satellite-subsystems/GomEPS.h \
+ C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include/satellite-subsystems/IsisEPS.h \
  C:\ISIS\workspace\GlobusSatProject\GlobusSatProject\src/SubSystemModules/PowerManagment/EPS.h \
  C:\ISIS\workspace\GlobusSatProject\GlobusSatProject\src/SubSystemModules/PowerManagment/EPSOperationModes.h \
  C:\ISIS\workspace\GlobusSatProject\GlobusSatProject\src/SubSystemModules/Communication/TRXVU.h \
@@ -64,7 +64,7 @@ C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/include/hal/Util
 
 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/include/hal/Timing/Time.h:
 
-C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include/satellite-subsystems/GomEPS.h:
+C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include/satellite-subsystems/IsisEPS.h:
 
 C:\ISIS\workspace\GlobusSatProject\GlobusSatProject\src/SubSystemModules/PowerManagment/EPS.h:
 

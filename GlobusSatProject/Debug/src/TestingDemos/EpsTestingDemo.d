@@ -29,7 +29,7 @@ src/TestingDemos/EpsTestingDemo.d: ../src/TestingDemos/EpsTestingDemo.c \
  C:\ISIS\workspace\GlobusSatProject\GlobusSatProject\src/SubSystemModules/PowerManagment/EPS.h \
  C:\ISIS\workspace\GlobusSatProject\GlobusSatProject\src/SubSystemModules/PowerManagment/EPSOperationModes.h \
  C:\ISIS\workspace\GlobusSatProject\GlobusSatProject\src/SubSystemModules/PowerManagment/EPSOperationModes.h \
- C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include/satellite-subsystems/GomEPS.h
+ C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include/satellite-subsystems/IsisEPS.h
 
 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/include/freertos/FreeRTOS.h:
 
@@ -91,4 +91,4 @@ C:\ISIS\workspace\GlobusSatProject\GlobusSatProject\src/SubSystemModules/PowerMa
 
 C:\ISIS\workspace\GlobusSatProject\GlobusSatProject\src/SubSystemModules/PowerManagment/EPSOperationModes.h:
 
-C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include/satellite-subsystems/GomEPS.h:
+C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include/satellite-subsystems/IsisEPS.h:

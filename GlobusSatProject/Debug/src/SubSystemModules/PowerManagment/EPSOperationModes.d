@@ -9,7 +9,7 @@ src/SubSystemModules/PowerManagment/EPSOperationModes.d: \
  C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/include/hal/Storage/FRAM.h \
  C:\ISIS\workspace\GlobusSatProject\GlobusSatProject\src/SysI2CAddr.h \
  C:\ISIS\workspace\GlobusSatProject\GlobusSatProject\src/TestingConfigurations.h \
- C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include/satellite-subsystems/GomEPS.h
+ C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include/satellite-subsystems/IsisEPS.h
 
 ../src/SubSystemModules/PowerManagment/EPSOperationModes.h:
 
@@ -29,4 +29,4 @@ C:\ISIS\workspace\GlobusSatProject\GlobusSatProject\src/SysI2CAddr.h:
 
 C:\ISIS\workspace\GlobusSatProject\GlobusSatProject\src/TestingConfigurations.h:
 
-C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include/satellite-subsystems/GomEPS.h:
+C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include/satellite-subsystems/IsisEPS.h:

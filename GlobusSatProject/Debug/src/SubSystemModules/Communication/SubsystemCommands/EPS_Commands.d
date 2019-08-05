@@ -8,7 +8,7 @@ src/SubSystemModules/Communication/SubsystemCommands/EPS_Commands.d: \
  C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/include/hal/Storage/FRAM.h \
  C:\ISIS\workspace\GlobusSatProject\GlobusSatProject\src/SysI2CAddr.h \
  C:\ISIS\workspace\GlobusSatProject\GlobusSatProject\src/TestingConfigurations.h \
- C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include/satellite-subsystems/GomEPS.h \
+ C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include/satellite-subsystems/IsisEPS.h \
  C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include/satellite-subsystems/IsisSolarPanelv2.h \
  C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/include/hal/Drivers/SPI.h \
  C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/include/at91/commons.h \
@@ -56,7 +56,7 @@ C:\ISIS\workspace\GlobusSatProject\GlobusSatProject\src/SysI2CAddr.h:
 
 C:\ISIS\workspace\GlobusSatProject\GlobusSatProject\src/TestingConfigurations.h:
 
-C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include/satellite-subsystems/GomEPS.h:
+C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include/satellite-subsystems/IsisEPS.h:
 
 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include/satellite-subsystems/IsisSolarPanelv2.h:
 

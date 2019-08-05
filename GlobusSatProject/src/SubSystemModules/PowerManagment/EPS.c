@@ -23,11 +23,17 @@ int GetBatteryVoltage(voltage_t *vbatt)
 	int err;
 
 	ieps_enghk_data_cdb_t p_raenghk_data_cdb;
+
 	unsigned char index= EPS_I2C_BUS_INDEX ;
+
 	ieps_board_t board= ieps_board_cdb1;
+
 	ieps_statcmd_t p_rsp_code;
+
 	err= IsisEPS_getRAEngHKDataCDB(&index, board,&p_raenghk_data_cdb,&p_rsp_code);
+
 	&vbatt=p_raenghk_data_cdb.fields.bat_voltage;
+
 	if(err!=E_NO_SS_ERR)
 	  return 0;
 	else

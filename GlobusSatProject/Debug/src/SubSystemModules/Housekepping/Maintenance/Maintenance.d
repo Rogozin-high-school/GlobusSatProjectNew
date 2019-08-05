@@ -1,5 +1,5 @@
-src/SubSystemModules/Maintenance/Maintenance.d: \
- ../src/SubSystemModules/Maintenance/Maintenance.c \
+src/SubSystemModules/Housekepping/Maintenance/Maintenance.d: \
+ ../src/SubSystemModules/Housekepping/Maintenance/Maintenance.c \
  C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/include/freertos/FreeRTOS.h \
  C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/include/freertos/projdefs.h \
  C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/include/freertos/FreeRTOSConfig.h \
@@ -42,7 +42,7 @@ src/SubSystemModules/Maintenance/Maintenance.d: \
  C:\ISIS\workspace\GlobusSatProject\GlobusSatProject\src/SubSystemModules/Communication/AckHandler.h \
  C:\ISIS\workspace\GlobusSatProject\GlobusSatProject\src/TLM_management.h \
  C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/include/hal/Boolean.h \
- ../src/SubSystemModules/Maintenance/Maintenance.h
+ ../src/SubSystemModules/Housekepping/Maintenance/Maintenance.h
 
 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/include/freertos/FreeRTOS.h:
 
@@ -128,4 +128,4 @@ C:\ISIS\workspace\GlobusSatProject\GlobusSatProject\src/TLM_management.h:
 
 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/include/hal/Boolean.h:
 
-../src/SubSystemModules/Maintenance/Maintenance.h:
+../src/SubSystemModules/Housekepping/Maintenance/Maintenance.h:
