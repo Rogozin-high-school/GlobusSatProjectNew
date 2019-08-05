@@ -17,7 +17,7 @@ voltage_t prev_avg = 0;		// y[i-1]
 float alpha = 0;			//<! smoothing constant
 
 voltage_t eps_threshold_voltages[NUMBER_OF_THRESHOLD_VOLTAGES];	// saves the current EPS logic threshold voltages
-
+//done
 int GetBatteryVoltage(voltage_t *vbatt)
 {
 	int err;
@@ -30,16 +30,18 @@ int GetBatteryVoltage(voltage_t *vbatt)
 
 	ieps_statcmd_t p_rsp_code;
 
-	err= IsisEPS_getRAEngHKDataCDB(&index, board,&p_raenghk_data_cdb,&p_rsp_code);
+	//get house keeping  data
 
-	&vbatt=p_raenghk_data_cdb.fields.bat_voltage;
+	err= IsisEPS_getRAEngHKDataCDB(index, board, &p_raenghk_data_cdb, &p_rsp_code);
+
+	*vbatt=p_raenghk_data_cdb.fields.bat_voltage; //saving the batt voltage
 
 	if(err!=E_NO_SS_ERR)
-	  return 0;
+	    return 0;
 	else
 		return -1;
 }
-
+//done
 int EPS_Init()
 {
 	//a*******************************************************************************************************
@@ -53,23 +55,27 @@ int EPS_Init()
 	//c*******************************************************************************************************
 	err= IsisSolarPanelv2_initialize( slave0_spi);
 	//d*******************************************************************************************************
-	if (err!=0)
-			return -1;
+	if (err==ISIS_SOLAR_PANEL_STATE_NOINIT)
+			return -2;
+	//loss batt
+	IsisSolarPanelv2_sleep();
 	//e*******************************************************************************************************
-	err= FRAM_read((unsigned char *)&alpha, EPS_ALPHA_FILTER_VALUE_ADDR, EPS_ALPHA_FILTER_VALUE_SIZE);
-
-	if (err!=0)
-				return -1;
-	//f*******************************************************************************************************
-	err= FRAM_read((unsigned char *)&eps_threshold_voltages, EPS_THRESH_VOLTAGES_ADDR, EPS_THRESH_VOLTAGES_SIZE);
-	if (err!=0)
-					return -1;
-	//g********************************************************************************************************
-	err= EPS_Conditioning();
-	if (err!=0)
-						return -1;
-	//*********************************************************************************************************
-	return 0;
+	err=GetThresholdVoltages(eps_threshold_voltages);
+	if (0!=err)
+	{
+		voltage_t temp[]=DEFAULT_EPS_THRESHOLD_VOLTAGES ;
+		memcpy(eps_threshold_voltages,temp,sizeof(temp));
+		return -3;
+	}
+	err=GetAlpha(&alpha);
+	if (0!=err)
+	{
+		alpha=DEFAULT_ALPHA_VALUE;
+		return -4;
+	}
+    GetBatteryVoltage(&prev_avg);
+    EPS_Conditioning();
+    return 0;
 }
 
 int EPS_Conditioning()
