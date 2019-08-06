@@ -44,7 +44,6 @@ typedef struct //מבנה של שרשרת אחת
 } C_FILE;
 #define C_FILES_BASE_ADDR (FSFRAM+sizeof(FS))
 
-
 void delete_allTMFilesFromSD()
 {
 }
@@ -216,7 +215,7 @@ static int getFileIndex(unsigned int creation_time, unsigned int current_time)
 //write to curr_file_name
 void get_file_name_by_index(char* c_file_name,int index,char* curr_file_name)
 {
-	sprintf(curr_file_name,"%s%d.%s", c_file_name, index, FS_FILE_ENDING); // in string
+	sprintf(curr_file_name,"%s%d.%s", c_file_name, index, FS_FILE_ENDING); // sentence that include all paramatrim
 }
 FileSystemResult c_fileReset(char* c_file_name)
 {
