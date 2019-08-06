@@ -348,7 +348,72 @@ FileSystemResult fileRead(char* c_file_name,byte* buffer, int size_of_buffer,
 FileSystemResult c_fileRead(char* c_file_name,byte* buffer, int size_of_buffer,
 		time_unix from_time, time_unix to_time, int* read,time_unix* last_read_time)
 {
-	return FS_SUCCSESS;
+	C_FILE c_file;
+		unsigned int addr;//FRAM ADDRESS
+		//F_FILE *file;
+		char curr_file_name[MAX_F_FILE_NAME_SIZE];
+		PLZNORESTART();
+
+		int buffer_index = 0;
+		void* element;
+		if(get_C_FILE_struct(c_file_name,&c_file,&addr)!=TRUE)//get c_file
+		{
+			return FS_NOT_EXIST;
+		}
+		if(from_time<c_file.creation_time)
+		{
+			from_time=c_file.creation_time;
+		}
+		F_FILE* current_file;
+		int index_current = getFileIndex(c_file.creation_time,from_time);
+		get_file_name_by_index(c_file_name,index_current,curr_file_name);
+		unsigned int size_elementWithTimeStamp = c_file.size_of_element+sizeof(unsigned int);
+		element = malloc(size_elementWithTimeStamp);//store element and his timestamp
+		do
+		{
+			get_file_name_by_index(c_file_name,index_current++,curr_file_name);
+			int error = f_enterFS();
+			(void)error;
+			//check_int("c_fileWrite, f_enterFS", error);
+			current_file= f_open(curr_file_name,"r");
+			if (current_file == NULL)
+				return FS_NOT_EXIST;
+			unsigned int length =f_filelength(curr_file_name)/(size_elementWithTimeStamp);//number of elements in currnet_file
+			int err_fread=0;
+			(void)err_fread;
+			f_seek( current_file, 0L , SEEK_SET );
+			for(unsigned int j=0;j < length;j++)
+			{
+				err_fread = f_read(element,(size_t)size_elementWithTimeStamp,(size_t)1,current_file);
+
+				unsigned int element_time = *((unsigned int*)element);
+				//printf("read element, time is %u\n",element_time);
+				if(element_time > to_time)
+				{
+					break;
+				}
+
+				if(element_time >= from_time)
+				{
+					*last_read_time = element_time;
+					if((unsigned int)buffer_index>(unsigned int)size_of_buffer)
+					{
+						free(element);
+						return FS_BUFFER_OVERFLOW;
+					}
+					(*read)++;
+					memcpy(buffer + buffer_index,element,size_elementWithTimeStamp);
+					buffer_index += size_elementWithTimeStamp;
+				}
+			}
+			f_close(current_file);
+			f_releaseFS();
+		}while(getFileIndex(c_file.creation_time,c_file.last_time_modified)>=index_current);
+
+
+		free(element);
+
+		return FS_SUCCSESS;
 }
 void print_file(char* c_file_name)
 {
