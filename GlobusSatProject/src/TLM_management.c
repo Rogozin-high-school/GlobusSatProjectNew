@@ -142,7 +142,7 @@ static void writewithEpochtime(F_FILE* file, byte* data, int size,unsigned int t
 static Boolean get_C_FILE_struct(char* name,C_FILE* c_file,unsigned int *address)
 {
 
-//	PLZNORESTART();
+//	PLZNORESTART();//macro for dont showing in 5 minuts
 
 	int i;
 	unsigned int c_file_address = 0;
@@ -158,9 +158,9 @@ static Boolean get_C_FILE_struct(char* name,C_FILE* c_file,unsigned int *address
 			return FALSE;
 		}
 
-		if(!strcmp(c_file->name,name))
+		if(!strcmp(c_file->name,name))//if equals return 0
 		{
-			if(address != NULL)
+			if(address != NULL)//if the user ask for the address
 			{
 				*address = c_file_address;
 			}
@@ -168,7 +168,7 @@ static Boolean get_C_FILE_struct(char* name,C_FILE* c_file,unsigned int *address
 		}
 	}
 	return FALSE;
-}
+}//address include the add. for the c_file that we wanted.
 //calculate index of file in chain file by time
 static int getFileIndex(unsigned int creation_time, unsigned int current_time)
 {
