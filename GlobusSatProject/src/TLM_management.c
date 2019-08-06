@@ -141,6 +141,32 @@ static void writewithEpochtime(F_FILE* file, byte* data, int size,unsigned int t
 // get C_FILE struct from FRAM by name
 static Boolean get_C_FILE_struct(char* name,C_FILE* c_file,unsigned int *address)
 {
+
+//	PLZNORESTART();
+
+	int i;
+	unsigned int c_file_address = 0;
+	int err_read=0;
+	int num_of_files_in_FS = getNumOfFilesInFS();
+	for(i =0; i < num_of_files_in_FS; i++)			//search correct c_file struct
+	{
+		c_file_address= C_FILES_BASE_ADDR+sizeof(C_FILE)*(i);
+		err_read = FRAM_read((unsigned char*)c_file,c_file_address,sizeof(C_FILE));
+		if(0 != err_read)
+		{
+			printf("FRAM error in 'get_C_FILE_struct()' error = %d\n",err_read);
+			return FALSE;
+		}
+
+		if(!strcmp(c_file->name,name))
+		{
+			if(address != NULL)
+			{
+				*address = c_file_address;
+			}
+			return TRUE;//stop when found
+		}
+	}
 	return FALSE;
 }
 //calculate index of file in chain file by time
