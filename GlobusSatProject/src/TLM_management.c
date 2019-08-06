@@ -130,13 +130,51 @@ FileSystemResult InitializeFS(Boolean first_time)
 
 //only register the chain, files will create dynamically
 FileSystemResult c_fileCreate(char* c_file_name,
-		int size_of_element)
+		int size_of_element) //create new record of files
 {
-	return FS_SUCCSESS;
+	if(strlen(c_file_name)>MAX_F_FILE_NAME_SIZE)//check len
+		{
+			return FS_TOO_LONG_NAME;
+		}
+
+		C_FILE c_file; //chain file descriptor
+		strcpy(c_file.name,c_file_name);
+		Time_getUnixEpoch(&c_file.creation_time);//get current time
+		c_file.size_of_element =size_of_element;
+		c_file.last_time_modified = FIRST_TIME;//no written yet
+		int num_of_files_in_FS = getNumOfFilesInFS();
+		if(num_of_files_in_FS == -1)
+		{
+			return FS_FRAM_FAIL;
+		}
+		int c_file_address =C_FILES_BASE_ADDR+num_of_files_in_FS*sizeof(C_FILE);
+		if(FRAM_write((unsigned char*)&c_file,
+				c_file_address,sizeof(C_FILE))!=0)//write c_file struct in FRAM
+		{
+				return FS_FRAM_FAIL;
+		}
+		if(setNumOfFilesInFS(num_of_files_in_FS+1)!=0)//TODO change to c_fil
+		{
+			return FS_FRAM_FAIL;
+		}
+
+		return FS_SUCCSESS;
+
 }
+
 //write element with timestamp to file
 static void writewithEpochtime(F_FILE* file, byte* data, int size,unsigned int time)
 {
+	int number_of_writes;
+		number_of_writes = f_write( &time,sizeof(unsigned int),1, file );
+		number_of_writes += f_write( data, size,1, file );
+		//printf("writing element, time is: %u\n",time);
+		if(number_of_writes!=2)
+		{
+			printf("writewithEpochtime error\n");
+		}
+		f_flush( file ); /* only after flushing can data be considered safe */
+		f_close( file ); /* data is also considered safe when file is closed */
 }
 // get C_FILE struct from FRAM by name
 static Boolean get_C_FILE_struct(char* name,C_FILE* c_file,unsigned int *address)
@@ -158,9 +196,9 @@ static Boolean get_C_FILE_struct(char* name,C_FILE* c_file,unsigned int *address
 			return FALSE;
 		}
 
-		if(!strcmp(c_file->name,name))//if equals return 0
+		if(!strcmp(c_file->name,name))//if  strcmp equals return 0
 		{
-			if(address != NULL)//if the user ask for the address
+			if(address != NULL)//if the user ask for the address, we need place to save the c_file, the place is address
 			{
 				*address = c_file_address;
 			}
@@ -172,11 +210,13 @@ static Boolean get_C_FILE_struct(char* name,C_FILE* c_file,unsigned int *address
 //calculate index of file in chain file by time
 static int getFileIndex(unsigned int creation_time, unsigned int current_time)
 {
-	return 0;
+
+	return ((current_time-creation_time)/SKIP_FILE_TIME_SEC); //diff time div how many time for each file give as the index
 }
 //write to curr_file_name
 void get_file_name_by_index(char* c_file_name,int index,char* curr_file_name)
 {
+	sprintf(curr_file_name,"%s%d.%s", c_file_name, index, FS_FILE_ENDING); // in string
 }
 FileSystemResult c_fileReset(char* c_file_name)
 {
