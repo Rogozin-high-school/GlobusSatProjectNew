@@ -103,15 +103,28 @@ int InitTrxvu() {
 
 int TRX_Logic() {
 
-	sat_packet_t cmd;
-	int a=GetOnlineCommand(&cmd);
-	if (a!=E_NO_SS_ERR)
-		{	return execution_error ;}
-	int b= SendAckPacket(ack_subtype_t acksubtype, sat_packet_t *cmd,
-			unsigned char *data, unsigned int length);
-	if (b!=E_NO_SS_ERR)
-	{	return execution_error ;}
-	return E_NO_SS_ERR;
+	int err = 0;
+		int frame_count = GetNumberOfFramesInBuffer();
+		sat_packet_t cmd = { 0 };
+
+		if (frame_count > 0) {
+			err = GetOnlineCommand(&cmd);
+			ResetGroundCommWDT();
+			SendAckPacket(ACK_RECEIVE_COMM, &cmd, NULL, 0);
+
+		} else if (GetDelayedCommandBufferCount() > 0) {
+			err = GetDelayedCommand(&cmd);
+		}
+		if (command_found == err) {
+			err = ActUponCommand(&cmd);
+			//TODO: log error
+		}
+		BeaconLogic();
+
+		if (command_found != err)
+			return err;
+
+		return command_succsess;
 }
 
 int GetNumberOfFramesInBuffer() {
@@ -151,6 +164,7 @@ int BeaconSetBitrate() {
 }
 
 void BeaconLogic() {
+
 }
 
 int muteTRXVU(time_unix duration) {
