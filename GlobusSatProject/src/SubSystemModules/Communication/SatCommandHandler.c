@@ -20,10 +20,14 @@ int ClearDelayedCMD_FromBuffer(unsigned int start_addr, unsigned int end_addr)
 
 int ParseDataToCommand(unsigned char * data,sat_packet_t *cmd)
 {
-
+	//move the data from address data to the id of cmd
 	memcpy(cmd->ID,data,sizeof(cmd->ID));
 
-	return 0;
+	if (cmd->ID !=NULL)
+
+		return 0;
+	else
+		return 1;
 }
 
 int AssmbleCommand(unsigned char *data, unsigned int data_length, char type,
