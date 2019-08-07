@@ -103,7 +103,7 @@ int InitTrxvu() {
 
 int TRX_Logic() {
 
-	int err = 0;
+	    int err = 0;
 		int frame_count = GetNumberOfFramesInBuffer();
 		sat_packet_t cmd = { 0 };
 
@@ -164,6 +164,21 @@ int BeaconSetBitrate() {
 }
 
 void BeaconLogic() {
+
+
+
+	int err = 0;
+	spl_command_type_t type;
+	trxvu_subtypes_t subtype;
+
+	sat_packet_t cmd={0};
+
+	unsigned int curr_time;
+	Time_getUnixEpoch(&curr_time);
+
+	int err= TransmitSplPacket(sat_packet_t *packet, int *avalFrames)
+	if (ACK_RECEIVE_COMM==curr_time)
+
 
 }
 
