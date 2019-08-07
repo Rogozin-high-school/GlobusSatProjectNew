@@ -20,14 +20,58 @@ int ClearDelayedCMD_FromBuffer(unsigned int start_addr, unsigned int end_addr)
 
 int ParseDataToCommand(unsigned char * data,sat_packet_t *cmd)
 {
-	//move the data from address data to the id of cmd
-	memcpy(cmd->ID,data,sizeof(cmd->ID));
+	/*
+	 * DIANa
+	 unsigned int off;
+	//move the data from address data to of cmd
+	 memcpy(&(cmd->ID),data,sizeof(cmd->ID));
+	 memcpy(&(cmd->cmd_subtype),data+,sizeof(cmd->cmd_subtype));
+	 memcpy(&(cmd->cmd_type),data,sizeof(cmd->cmd_type));
+	 memcpy(&(cmd->data),data,sizeof(cmd->data));
+	 memcpy(&(cmd->length),data,sizeof(cmd->length));
 
-	if (cmd->ID !=NULL)
+	 if (cmd !=NULL)
 
-		return 0;
-	else
-		return 1;
+		return command_succsess;*/
+
+	if(NULL == data || NULL == cmd){
+		return null_pointer_error;
+	}
+	void *err = NULL;
+
+	unsigned int offset = 0;
+
+	unsigned int id = 0;
+	memcpy(&id,data,sizeof(id));
+	if (NULL == err) {
+			return execution_error;
+	}
+	offset += sizeof(id);
+
+	char type;
+	err = memcpy(&type,data+offset,sizeof(type));
+	if (NULL == err) {
+		return execution_error;
+	}
+	offset += sizeof(type);
+
+	char subtype;
+	err = memcpy(&subtype, data + offset,sizeof(subtype));
+	if (NULL == err) {
+		return execution_error;
+	}
+	offset += sizeof(subtype);
+
+
+	unsigned int data_length = 0;
+	err = memcpy(&data_length, data + offset,sizeof(data_length));
+		if (NULL == err) {
+			return execution_error;
+		}
+	offset += sizeof(data_length);
+
+	return AssembleCommand(data+offset,data_length,type,subtype,id,cmd);
+
 }
 
 int AssmbleCommand(unsigned char *data, unsigned int data_length, char type,
