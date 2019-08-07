@@ -44,11 +44,74 @@ void InitSemaphores()
 }
 
 int InitTrxvu() {
-	return 0;
+
+
+	    ISIStrxvuI2CAddress myTRXVUAddress;
+		ISIStrxvuFrameLengths myTRXVUBuffers;
+
+		int retValInt = 0;
+
+		//Buffer definition
+		myTRXVUBuffers.maxAX25frameLengthTX = SIZE_TXFRAME; //SIZE_TXFRAME;
+		myTRXVUBuffers.maxAX25frameLengthRX = SIZE_RXFRAME;
+
+		//I2C addresses defined
+		myTRXVUAddress.addressVu_rc = I2C_TRXVU_RC_ADDR;
+		myTRXVUAddress.addressVu_tc = I2C_TRXVU_TC_ADDR;
+
+		//Bitrate definition
+		ISIStrxvuBitrate myTRXVUBitrates = trxvu_bitrate_9600;
+
+		retValInt = IsisTrxvu_initialize(&myTRXVUAddress, &myTRXVUBuffers,
+				&myTRXVUBitrates, 1);
+
+		if (retValInt != 0){
+			return retValInt;
+		}
+
+		//DELAY FOR DOING COMMANDS
+		vTaskDelay(100);
+
+		// antenna init
+		ISISantsI2Caddress myAntennaAddress;
+		myAntennaAddress.addressSideA = ANTS_I2C_SIDE_A_ADDR;
+		myAntennaAddress.addressSideB = ANTS_I2C_SIDE_B_ADDR;
+
+		//Initialize the AntS system
+		// ONE IS FOR TWO ANTS
+		retValInt = IsisAntS_initialize(&myAntennaAddress, 1);
+
+		if (retValInt != 0){
+			return retValInt;
+		}
+		vTaskDelay(100);
+
+		InitSemaphores();
+
+		if (0 != FRAM_read(&g_beacon_change_baud_period,
+		BEACON_BITRATE_CYCLE_ADDR, BEACON_BITRATE_CYCLE_SIZE)){
+			g_beacon_change_baud_period = DEFALUT_BEACON_BITRATE_CYCLE;
+		}
+
+		if (0 != FRAM_read((unsigned char*) &g_beacon_interval_time,
+		BEACON_INTERVAL_TIME_ADDR, BEACON_INTERVAL_TIME_SIZE)){
+			g_beacon_interval_time = DEFAULT_BEACON_INTERVAL_TIME;
+		}
+		return E_NO_SS_ERR;
+
 }
 
 int TRX_Logic() {
-	return 0;
+
+	sat_packet_t cmd;
+	int a=GetOnlineCommand(&cmd);
+	if (a!=E_NO_SS_ERR)
+		{	return execution_error ;}
+	int b= SendAckPacket(ack_subtype_t acksubtype, sat_packet_t *cmd,
+			unsigned char *data, unsigned int length);
+	if (b!=E_NO_SS_ERR)
+	{	return execution_error ;}
+	return E_NO_SS_ERR;
 }
 
 int GetNumberOfFramesInBuffer() {
