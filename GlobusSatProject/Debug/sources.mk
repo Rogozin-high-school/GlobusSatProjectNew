@@ -20,8 +20,8 @@ SUBDIRS := \
 src \
 src/TestingDemos \
 src/SubSystemModules/PowerManagment \
+src/SubSystemModules/Maintenance \
 src/SubSystemModules/Housekepping \
-src/SubSystemModules/Housekepping/Maintenance \
 src/SubSystemModules/Communication \
 src/SubSystemModules/Communication/SubsystemCommands \
 

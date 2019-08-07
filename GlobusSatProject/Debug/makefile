@@ -10,7 +10,7 @@ RM := rm -rf
 -include sources.mk
 -include src/TestingDemos/subdir.mk
 -include src/SubSystemModules/PowerManagment/subdir.mk
--include src/SubSystemModules/Housekepping/Maintenance/subdir.mk
+-include src/SubSystemModules/Maintenance/subdir.mk
 -include src/SubSystemModules/Housekepping/subdir.mk
 -include src/SubSystemModules/Communication/SubsystemCommands/subdir.mk
 -include src/SubSystemModules/Communication/subdir.mk

@@ -82,22 +82,32 @@ C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/lib\libHALD.a(RT
                               C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/lib\libHALD.a(Time.o) (RTC_getTime)
 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/lib\libHALD.a(RTT.o)
                               C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/lib\libHALD.a(Time.o) (RTT_start)
-C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
-                              ./src/TestingDemos/MaintenanceTestingDemo.o (fm_getdrive)
-C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
-                              C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o) (fn_getdcwd)
 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_common.o)
-                              C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o) (p_filesystem)
+                              ./src/TLM_management.o (fn_init)
+C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+                              ./src/TLM_management.o (fm_initvolume)
 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(safefat.o)
-                              C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o) (s_subdir)
+                              C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_common.o) (safe_fix_filelengths)
+C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+                              ./src/TLM_management.o (atmel_mcipdc_initfunc)
 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(oalp_mutex.o)
                               C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_common.o) (oal_mutex_create)
 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(oalp_task.o)
                               C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_common.o) (oal_task_get_id)
+C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc_hw.o)
+                              C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o) (mcipdc_hw_init)
 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(psp_rand.o)
                               C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_common.o) (psp_getrand)
 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(psp_rtc.o)
                               C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_common.o) (psp_getcurrenttimedate)
+C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+                              C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o) (hcc_mem_alloc)
+C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+                              C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_common.o) (_f_getdirsector)
+C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(psp_hcc_mem.o)
+                              C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o) (hcc_mem_buf_alloc)
+C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+                              ./src/TLM_management.o (GomEpsGetHkData_basic)
 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(IsisEPS.o)
                               ./src/SubSystemModules/PowerManagment/EPS.o (IsisEPS_initialize)
 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(IsisSolarPanelv2.o)
@@ -178,6 +188,8 @@ c:/isis/application/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm
                               ./src/TestingDemos/CommandsTestingDemo.o (printf)
 c:/isis/application/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc_s.a(lib_a-puts.o)
                               ./src/TestingDemos/CommandsTestingDemo.o (puts)
+c:/isis/application/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc_s.a(lib_a-strcpy.o)
+                              ./src/TLM_management.o (strcpy)
 c:/isis/application/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc_s.a(lib_a-vfprintf.o)
                               c:/isis/application/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc_s.a(lib_a-printf.o) (_vfprintf_r)
 c:/isis/application/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc_s.a(lib_a-wbuf.o)
@@ -596,7 +608,7 @@ Discarded input sections
                 0x00000000       0x68 ./src/SubSystemModules/PowerManagment/EPS.o
  .rodata        0x00000000        0xc ./src/SubSystemModules/PowerManagment/EPS.o
  .text.EPS_Init
-                0x00000000      0x108 ./src/SubSystemModules/PowerManagment/EPS.o
+                0x00000000      0x10c ./src/SubSystemModules/PowerManagment/EPS.o
  .text.UpdateAlpha
                 0x00000000       0x24 ./src/SubSystemModules/PowerManagment/EPS.o
  .text.UpdateThresholdVoltages
@@ -644,27 +656,27 @@ Discarded input sections
                 0x00000000       0x32 ./src/SubSystemModules/PowerManagment/EPSOperationModes.o
  .debug_frame   0x00000000       0xe8 ./src/SubSystemModules/PowerManagment/EPSOperationModes.o
  COMMON         0x00000000        0x2 ./src/SubSystemModules/PowerManagment/EPSOperationModes.o
- .text          0x00000000        0x0 ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
- .data          0x00000000        0x0 ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
- .bss           0x00000000        0x0 ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
+ .text          0x00000000        0x0 ./src/SubSystemModules/Maintenance/Maintenance.o
+ .data          0x00000000        0x0 ./src/SubSystemModules/Maintenance/Maintenance.o
+ .bss           0x00000000        0x0 ./src/SubSystemModules/Maintenance/Maintenance.o
  .text.CheckExecutionTime
-                0x00000000       0x28 ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
+                0x00000000       0x28 ./src/SubSystemModules/Maintenance/Maintenance.o
  .text.CheckExecTimeFromFRAM
-                0x00000000       0x28 ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
+                0x00000000       0x28 ./src/SubSystemModules/Maintenance/Maintenance.o
  .text.SaveSatTimeInFRAM
-                0x00000000       0x20 ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
+                0x00000000       0x20 ./src/SubSystemModules/Maintenance/Maintenance.o
  .text.IsFS_Corrupted
-                0x00000000       0x1c ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
+                0x00000000       0x1c ./src/SubSystemModules/Maintenance/Maintenance.o
  .text.WakeupFromResetCMD
-                0x00000000       0x1c ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
+                0x00000000       0x1c ./src/SubSystemModules/Maintenance/Maintenance.o
  .text.ResetGroundCommWDT
-                0x00000000       0x14 ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
+                0x00000000       0x14 ./src/SubSystemModules/Maintenance/Maintenance.o
  .text.IsGroundCommunicationWDTKick
-                0x00000000       0x1c ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
+                0x00000000       0x1c ./src/SubSystemModules/Maintenance/Maintenance.o
  .text.SetGsWdtKickTime
-                0x00000000       0x24 ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
+                0x00000000       0x24 ./src/SubSystemModules/Maintenance/Maintenance.o
  .text.GetGsWdtKickTime
-                0x00000000       0x28 ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
+                0x00000000       0x28 ./src/SubSystemModules/Maintenance/Maintenance.o
  .text          0x00000000        0x0 ./src/SubSystemModules/Housekepping/TelemetryCollector.o
  .data          0x00000000        0x0 ./src/SubSystemModules/Housekepping/TelemetryCollector.o
  .bss           0x00000000        0x0 ./src/SubSystemModules/Housekepping/TelemetryCollector.o
@@ -1053,51 +1065,52 @@ Discarded input sections
  .text.delete_allTMFilesFromSD
                 0x00000000       0x14 ./src/TLM_management.o
  .text.getNumOfFilesInFS
-                0x00000000       0x20 ./src/TLM_management.o
+                0x00000000       0x44 ./src/TLM_management.o
  .text.setNumOfFilesInFS
-                0x00000000       0x24 ./src/TLM_management.o
+                0x00000000       0x50 ./src/TLM_management.o
+ .rodata        0x00000000      0x174 ./src/TLM_management.o
  .text.InitializeFS
-                0x00000000       0x24 ./src/TLM_management.o
+                0x00000000      0x174 ./src/TLM_management.o
  .text.c_fileCreate
-                0x00000000       0x28 ./src/TLM_management.o
+                0x00000000       0xf4 ./src/TLM_management.o
  .text.writewithEpochtime
-                0x00000000       0x28 ./src/TLM_management.o
+                0x00000000       0x8c ./src/TLM_management.o
  .text.get_C_FILE_struct
-                0x00000000       0x2c ./src/TLM_management.o
+                0x00000000       0xf4 ./src/TLM_management.o
  .text.getFileIndex
-                0x00000000       0x28 ./src/TLM_management.o
+                0x00000000       0x40 ./src/TLM_management.o
  .text.get_file_name_by_index
-                0x00000000       0x24 ./src/TLM_management.o
+                0x00000000       0x44 ./src/TLM_management.o
  .text.c_fileReset
                 0x00000000       0x24 ./src/TLM_management.o
  .text.c_fileWrite
-                0x00000000       0x28 ./src/TLM_management.o
+                0x00000000      0x104 ./src/TLM_management.o
  .text.fileWrite
-                0x00000000       0x2c ./src/TLM_management.o
+                0x00000000      0x140 ./src/TLM_management.o
  .text.deleteElementsFromFile
                 0x00000000       0x30 ./src/TLM_management.o
  .text.c_fileDeleteElements
                 0x00000000       0x2c ./src/TLM_management.o
  .text.fileRead
-                0x00000000       0x30 ./src/TLM_management.o
+                0x00000000      0x190 ./src/TLM_management.o
  .text.c_fileRead
-                0x00000000       0x30 ./src/TLM_management.o
+                0x00000000      0x27c ./src/TLM_management.o
  .text.print_file
                 0x00000000       0x1c ./src/TLM_management.o
  .text.DeInitializeFS
                 0x00000000       0x14 ./src/TLM_management.o
- .debug_info    0x00000000      0x645 ./src/TLM_management.o
- .debug_abbrev  0x00000000      0x166 ./src/TLM_management.o
+ .debug_info    0x00000000      0xa94 ./src/TLM_management.o
+ .debug_abbrev  0x00000000      0x2b5 ./src/TLM_management.o
  .debug_loc     0x00000000      0x318 ./src/TLM_management.o
  .debug_aranges
                 0x00000000       0xa8 ./src/TLM_management.o
- .debug_ranges  0x00000000       0x98 ./src/TLM_management.o
- .debug_line    0x00000000      0x286 ./src/TLM_management.o
- .debug_str     0x00000000      0x434 ./src/TLM_management.o
+ .debug_ranges  0x00000000       0xc8 ./src/TLM_management.o
+ .debug_line    0x00000000      0x431 ./src/TLM_management.o
+ .debug_str     0x00000000      0x5bd ./src/TLM_management.o
  .comment       0x00000000       0x71 ./src/TLM_management.o
  .ARM.attributes
                 0x00000000       0x32 ./src/TLM_management.o
- .debug_frame   0x00000000      0x1c0 ./src/TLM_management.o
+ .debug_frame   0x00000000      0x1ec ./src/TLM_management.o
  .text          0x00000000        0x0 ./src/main.o
  .data          0x00000000        0x0 ./src/main.o
  .bss           0x00000000        0x0 ./src/main.o
@@ -1373,217 +1386,6 @@ Discarded input sections
  .ARM.attributes
                 0x00000000       0x32 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/lib\libHALD.a(RTT.o)
  .debug_frame   0x00000000       0x8c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/lib\libHALD.a(RTT.o)
- .text          0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .data          0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .bss           0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_initvolume
-                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_initvolume_nonsafe
-                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_createdriver
-                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_initvolumepartition
-                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_initvolumepartition_nonsafe
-                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_createpartition
-                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_getpartition
-                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_checkvolume
-                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_delvolume
-                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_releasedriver
-                0x00000000       0x54 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_get_volume_count
-                0x00000000       0x58 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_get_volume_list
-                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_format
-                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_getcwd
-                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_getdcwd
-                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_chdrive
-                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_getdrive
-                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_getfreespace
-                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_chdir
-                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_mkdir
-                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_rmdir
-                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_findfirst
-                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_findnext
-                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_move  0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_rename
-                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_filelength
-                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_abortclose
-                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_close
-                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_flush_filebuffer
-                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_flush
-                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_open  0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_open_nonsafe
-                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_open_pos
-                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_read  0x00000000       0x7c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_write
-                0x00000000       0x7c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_seek  0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_tell  0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_getc  0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_putc  0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_rewind
-                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_eof   0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_gettimedate
-                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_stat  0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_fstat
-                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_settimedate
-                0x00000000       0x74 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_delete
-                0x00000000       0x64 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_getattr
-                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_setattr
-                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_getlabel
-                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_setlabel
-                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_truncate
-                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_get_oem
-                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_ftruncate
-                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_seteof
-                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text.fm_getlasterror
-                0x00000000       0x40 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .debug_info    0x00000000     0x19f9 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .debug_abbrev  0x00000000      0x1c9 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .debug_loc     0x00000000      0x974 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .debug_aranges
-                0x00000000      0x1d0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .debug_ranges  0x00000000      0x1c0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .debug_line    0x00000000      0x637 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .debug_str     0x00000000      0x7fd C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .comment       0x00000000       0x71 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .ARM.attributes
-                0x00000000       0x32 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .debug_frame   0x00000000      0x614 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
- .text          0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .data          0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .bss           0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text._f_invalidatedir
-                0x00000000       0x28 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text._f_getdirsector
-                0x00000000       0x88 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text._f_writedirsector
-                0x00000000       0x74 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text._f_checknameinv
-                0x00000000      0x180 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text._f_checkname
-                0x00000000       0x7c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text._f_checknamewc
-                0x00000000       0xf8 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text._f_setnameext
-                0x00000000      0x300 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text._f_setfsname
-                0x00000000      0x584 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text._f_findfile
-                0x00000000      0x30c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text._f_cmp_wname
-                0x00000000      0x274 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text._f_to_string
-                0x00000000      0x130 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text._f_findfilewc
-                0x00000000      0x278 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text._f_getfilename
-                0x00000000      0x20c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text._f_findpath
-                0x00000000      0x35c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text.fn_getdcwd
-                0x00000000      0x1e0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text.fn_getcwd
-                0x00000000      0x1e8 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text.fn_findfirst
-                0x00000000      0x13c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text.fn_findnext
-                0x00000000      0x360 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text.fn_chdir
-                0x00000000      0x240 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text.fn_move  0x00000000      0xad0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text.fn_rename
-                0x00000000      0x214 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text._f_lock_resfile
-                0x00000000       0x6c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text._f_unlock_resfile
-                0x00000000       0x40 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text._f_getintfile
-                0x00000000      0x124 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text._f_addentry
-                0x00000000      0x540 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .rodata        0x00000000       0x20 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text.fn_mkdir
-                0x00000000      0x75c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text.fn_filelength
-                0x00000000      0x1cc C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text.fn_open_sub
-                0x00000000     0x1698 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text.fn_open  0x00000000       0x44 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text.fn_open_nonsafe
-                0x00000000       0x44 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text.fn_open_pos
-                0x00000000       0x48 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text.fn_settimedate
-                0x00000000      0x324 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text.fn_gettimedate
-                0x00000000      0x1bc C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text.fn_stat  0x00000000      0x26c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text.fn_delete
-                0x00000000      0x490 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text.fn_getattr
-                0x00000000      0x17c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text.fn_setattr
-                0x00000000      0x328 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text.fn_rmdir
-                0x00000000      0x5ac C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text.fn_getlabel
-                0x00000000      0x39c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text.fn_setlabel
-                0x00000000      0x574 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .text.fn_truncate
-                0x00000000      0x7b4 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .debug_info    0x00000000     0x28dd C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .debug_abbrev  0x00000000      0x2ce C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .debug_loc     0x00000000      0x70c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .debug_aranges
-                0x00000000      0x160 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .debug_ranges  0x00000000      0x1c8 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .debug_line    0x00000000     0x1081 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .debug_str     0x00000000      0xd16 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .comment       0x00000000       0x71 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .ARM.attributes
-                0x00000000       0x32 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
- .debug_frame   0x00000000      0x47c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
  .text          0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_common.o)
  .data          0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_common.o)
  .bss           0x00000000    0x44780 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_common.o)
@@ -1821,6 +1623,122 @@ Discarded input sections
                 0x00000000       0x32 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_common.o)
  .debug_frame   0x00000000      0xc40 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_common.o)
  COMMON         0x00000000     0x10a8 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_common.o)
+ .text          0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .data          0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .bss           0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_initvolume
+                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_initvolume_nonsafe
+                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_createdriver
+                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_initvolumepartition
+                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_initvolumepartition_nonsafe
+                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_createpartition
+                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_getpartition
+                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_checkvolume
+                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_delvolume
+                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_releasedriver
+                0x00000000       0x54 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_get_volume_count
+                0x00000000       0x58 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_get_volume_list
+                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_format
+                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_getcwd
+                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_getdcwd
+                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_chdrive
+                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_getdrive
+                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_getfreespace
+                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_chdir
+                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_mkdir
+                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_rmdir
+                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_findfirst
+                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_findnext
+                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_move  0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_rename
+                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_filelength
+                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_abortclose
+                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_close
+                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_flush_filebuffer
+                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_flush
+                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_open  0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_open_nonsafe
+                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_open_pos
+                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_read  0x00000000       0x7c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_write
+                0x00000000       0x7c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_seek  0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_tell  0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_getc  0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_putc  0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_rewind
+                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_eof   0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_gettimedate
+                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_stat  0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_fstat
+                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_settimedate
+                0x00000000       0x74 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_delete
+                0x00000000       0x64 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_getattr
+                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_setattr
+                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_getlabel
+                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_setlabel
+                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_truncate
+                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_get_oem
+                0x00000000       0x70 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_ftruncate
+                0x00000000       0x68 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_seteof
+                0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .text.fm_getlasterror
+                0x00000000       0x40 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .debug_info    0x00000000     0x19f9 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .debug_abbrev  0x00000000      0x1c9 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .debug_loc     0x00000000      0x974 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .debug_aranges
+                0x00000000      0x1d0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .debug_ranges  0x00000000      0x1c0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .debug_line    0x00000000      0x637 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .debug_str     0x00000000      0x7fd C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .comment       0x00000000       0x71 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .ARM.attributes
+                0x00000000       0x32 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
+ .debug_frame   0x00000000      0x614 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat_m.o)
  .text          0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(safefat.o)
  .data          0x00000000       0x20 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(safefat.o)
  .bss           0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(safefat.o)
@@ -1948,6 +1866,54 @@ Discarded input sections
  .ARM.attributes
                 0x00000000       0x32 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(safefat.o)
  .debug_frame   0x00000000      0x638 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(safefat.o)
+ .text          0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .data          0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .bss           0x00000000       0x60 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .text.mcipdc_cmd
+                0x00000000      0x22c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .text.mcipdc_stop
+                0x00000000       0xfc C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .text.mcipdc_read
+                0x00000000      0x27c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .text.mcipdc_write
+                0x00000000      0x298 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .text.mcipdc_readsector
+                0x00000000       0x9c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .text.mcipdc_readmultiplesector
+                0x00000000      0x124 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .text.mcipdc_writesector
+                0x00000000       0x90 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .text.mcipdc_writemultiplesector
+                0x00000000      0x120 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .text.mcipdc_set_speed
+                0x00000000       0xb0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .text.mcipdc_get_speed
+                0x00000000       0x48 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .text._get_csd_bits
+                0x00000000      0x14c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .rodata        0x00000000       0x30 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .text.mcipdc_initcard
+                0x00000000      0x8f4 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .text.mcipdc_getstatus
+                0x00000000       0xe8 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .text.mcipdc_getphy
+                0x00000000       0x90 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .text.mcipdc_release
+                0x00000000       0x50 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .text.atmel_mcipdc_initfunc
+                0x00000000      0x160 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .debug_info    0x00000000      0xd43 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .debug_abbrev  0x00000000      0x22f C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .debug_loc     0x00000000      0x2c0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .debug_aranges
+                0x00000000       0x98 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .debug_ranges  0x00000000       0x88 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .debug_line    0x00000000      0x574 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .debug_str     0x00000000      0x643 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .comment       0x00000000       0x71 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .ARM.attributes
+                0x00000000       0x32 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
+ .debug_frame   0x00000000      0x1c4 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc.o)
  .text          0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(oalp_mutex.o)
  .data          0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(oalp_mutex.o)
  .bss           0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(oalp_mutex.o)
@@ -1988,6 +1954,30 @@ Discarded input sections
  .ARM.attributes
                 0x00000000       0x32 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(oalp_task.o)
  .debug_frame   0x00000000       0x2c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(oalp_task.o)
+ .text          0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc_hw.o)
+ .data          0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc_hw.o)
+ .bss           0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc_hw.o)
+ .rodata        0x00000000       0x54 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc_hw.o)
+ .text.mcipdc_hw_init
+                0x00000000       0xe8 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc_hw.o)
+ .text.mcipdc_hw_delete
+                0x00000000       0x78 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc_hw.o)
+ .text.mcipdc_hw_card_plugged
+                0x00000000       0x1c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc_hw.o)
+ .text.mcipdc_hw_card_writeprotect
+                0x00000000       0x1c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc_hw.o)
+ .debug_info    0x00000000      0x4c6 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc_hw.o)
+ .debug_abbrev  0x00000000      0x13e C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc_hw.o)
+ .debug_loc     0x00000000       0xb0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc_hw.o)
+ .debug_aranges
+                0x00000000       0x38 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc_hw.o)
+ .debug_ranges  0x00000000       0x28 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc_hw.o)
+ .debug_line    0x00000000      0x18b C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc_hw.o)
+ .debug_str     0x00000000      0x3bb C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc_hw.o)
+ .comment       0x00000000       0x71 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc_hw.o)
+ .ARM.attributes
+                0x00000000       0x32 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc_hw.o)
+ .debug_frame   0x00000000       0x80 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(atmel_mcipdc_hw.o)
  .text          0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(psp_rand.o)
  .data          0x00000000        0x4 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(psp_rand.o)
  .bss           0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(psp_rand.o)
@@ -2022,6 +2012,239 @@ Discarded input sections
  .ARM.attributes
                 0x00000000       0x32 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(psp_rtc.o)
  .debug_frame   0x00000000       0x2c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(psp_rtc.o)
+ .text          0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .data          0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .bss           0x00000000       0x90 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .text._hcc_get_buf_dsc
+                0x00000000       0x8c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .text._hcc_check_free_pages
+                0x00000000      0x18c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .text._hcc_mark_pages
+                0x00000000      0x158 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .text._hcc_set_lock_dsc
+                0x00000000      0x124 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .text._hcc_clear_lock_dsc
+                0x00000000       0x80 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .text._hcc_lock_access
+                0x00000000      0x128 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .text._hcc_unlock_access
+                0x00000000       0x30 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .text._hcc_mem_lock_get_area
+                0x00000000      0x244 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .text.hcc_mem_lock_tr
+                0x00000000      0x2cc C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .text.hcc_mem_lock
+                0x00000000      0x1b0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .text.hcc_mem_unlock
+                0x00000000      0x170 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .text.hcc_mem_unlock_int
+                0x00000000      0x1a8 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .text.hcc_mem_alloc
+                0x00000000      0x454 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .text.hcc_mem_free
+                0x00000000      0x178 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .text.hcc_mem_get_hdl
+                0x00000000       0x8c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .text.hcc_mem_add
+                0x00000000      0x3b0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .text.hcc_mem_init
+                0x00000000      0x164 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .text.hcc_mem_start
+                0x00000000       0x1c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .text.hcc_mem_stop
+                0x00000000       0x1c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .text.hcc_mem_delete
+                0x00000000       0x94 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .debug_info    0x00000000      0xd35 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .debug_abbrev  0x00000000      0x1fb C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .debug_loc     0x00000000      0x370 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .debug_aranges
+                0x00000000       0xb8 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .debug_ranges  0x00000000       0xc0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .debug_line    0x00000000      0x5b7 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .debug_str     0x00000000      0x4fa C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .comment       0x00000000       0x71 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .ARM.attributes
+                0x00000000       0x32 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .debug_frame   0x00000000      0x228 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(hcc_mem.o)
+ .text          0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .data          0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .bss           0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text._f_invalidatedir
+                0x00000000       0x28 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text._f_getdirsector
+                0x00000000       0x88 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text._f_writedirsector
+                0x00000000       0x74 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text._f_checknameinv
+                0x00000000      0x180 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text._f_checkname
+                0x00000000       0x7c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text._f_checknamewc
+                0x00000000       0xf8 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text._f_setnameext
+                0x00000000      0x300 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text._f_setfsname
+                0x00000000      0x584 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text._f_findfile
+                0x00000000      0x30c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text._f_cmp_wname
+                0x00000000      0x274 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text._f_to_string
+                0x00000000      0x130 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text._f_findfilewc
+                0x00000000      0x278 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text._f_getfilename
+                0x00000000      0x20c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text._f_findpath
+                0x00000000      0x35c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text.fn_getdcwd
+                0x00000000      0x1e0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text.fn_getcwd
+                0x00000000      0x1e8 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text.fn_findfirst
+                0x00000000      0x13c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text.fn_findnext
+                0x00000000      0x360 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text.fn_chdir
+                0x00000000      0x240 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text.fn_move  0x00000000      0xad0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text.fn_rename
+                0x00000000      0x214 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text._f_lock_resfile
+                0x00000000       0x6c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text._f_unlock_resfile
+                0x00000000       0x40 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text._f_getintfile
+                0x00000000      0x124 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text._f_addentry
+                0x00000000      0x540 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .rodata        0x00000000       0x20 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text.fn_mkdir
+                0x00000000      0x75c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text.fn_filelength
+                0x00000000      0x1cc C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text.fn_open_sub
+                0x00000000     0x1698 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text.fn_open  0x00000000       0x44 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text.fn_open_nonsafe
+                0x00000000       0x44 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text.fn_open_pos
+                0x00000000       0x48 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text.fn_settimedate
+                0x00000000      0x324 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text.fn_gettimedate
+                0x00000000      0x1bc C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text.fn_stat  0x00000000      0x26c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text.fn_delete
+                0x00000000      0x490 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text.fn_getattr
+                0x00000000      0x17c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text.fn_setattr
+                0x00000000      0x328 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text.fn_rmdir
+                0x00000000      0x5ac C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text.fn_getlabel
+                0x00000000      0x39c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text.fn_setlabel
+                0x00000000      0x574 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text.fn_truncate
+                0x00000000      0x7b4 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .debug_info    0x00000000     0x28dd C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .debug_abbrev  0x00000000      0x2ce C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .debug_loc     0x00000000      0x70c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .debug_aranges
+                0x00000000      0x160 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .debug_ranges  0x00000000      0x1c8 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .debug_line    0x00000000     0x1081 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .debug_str     0x00000000      0xd16 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .comment       0x00000000       0x71 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .ARM.attributes
+                0x00000000       0x32 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .debug_frame   0x00000000      0x47c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(fat.o)
+ .text          0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(psp_hcc_mem.o)
+ .data          0x00000000        0x0 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(psp_hcc_mem.o)
+ .bss           0x00000000     0x4024 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(psp_hcc_mem.o)
+ .text.hcc_mem_buf_alloc
+                0x00000000       0xe4 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(psp_hcc_mem.o)
+ .text.hcc_mem_buf_free
+                0x00000000       0x6c C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(psp_hcc_mem.o)
+ .debug_info    0x00000000      0x1ad C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(psp_hcc_mem.o)
+ .debug_abbrev  0x00000000       0xb3 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(psp_hcc_mem.o)
+ .debug_loc     0x00000000       0x58 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(psp_hcc_mem.o)
+ .debug_aranges
+                0x00000000       0x28 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(psp_hcc_mem.o)
+ .debug_ranges  0x00000000       0x18 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(psp_hcc_mem.o)
+ .debug_line    0x00000000      0x133 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(psp_hcc_mem.o)
+ .debug_str     0x00000000      0x1d7 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(psp_hcc_mem.o)
+ .comment       0x00000000       0x71 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(psp_hcc_mem.o)
+ .ARM.attributes
+                0x00000000       0x32 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(psp_hcc_mem.o)
+ .debug_frame   0x00000000       0x40 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hcc/lib\libHCCD.a(psp_hcc_mem.o)
+ .text          0x00000000        0x0 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .data          0x00000000        0x0 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .bss           0x00000000        0x8 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.GomEpsInitialize
+                0x00000000      0x148 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.makeEPStransfer
+                0x00000000       0x3c C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.GomEpsPing
+                0x00000000       0xf8 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .rodata        0x00000000       0x20 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.GomEpsSoftReset
+                0x00000000       0xc4 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.GomEpsHardReset
+                0x00000000       0xa8 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.GomEpsGetHkData_param
+                0x00000000      0x29c C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.GomEpsGetHkData_general
+                0x00000000      0x45c C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.GomEpsGetHkData_vi
+                0x00000000      0x188 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.GomEpsGetHkData_out
+                0x00000000      0x21c C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.GomEpsGetHkData_wdt
+                0x00000000      0x2b4 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.GomEpsGetHkData_basic
+                0x00000000      0x22c C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.GomEpsSetOutput
+                0x00000000       0xbc C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.GomEpsSetSingleOutput
+                0x00000000       0xe4 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.GomEpsSetPhotovoltaicInputs
+                0x00000000      0x11c C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.GomEpsSetPptMode
+                0x00000000       0xc0 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.GomEpsSetHeaterAutoMode
+                0x00000000       0xe8 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.GomEpsResetCounters
+                0x00000000       0xc4 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.GomEpsResetWDT
+                0x00000000       0xc4 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.GomEpsConfigCMD
+                0x00000000       0xb8 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.GomEpsConfigGet
+                0x00000000      0x16c C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.GomEpsConfigSet
+                0x00000000      0x184 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.GomEpsConfig2CMD
+                0x00000000       0xb8 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.GomEpsConfig2Get
+                0x00000000      0x16c C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .text.GomEpsConfig2Set
+                0x00000000      0x184 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .debug_info    0x00000000     0x16bc C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .debug_abbrev  0x00000000      0x1bc C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .debug_loc     0x00000000      0x420 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .debug_aranges
+                0x00000000       0xd8 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .debug_ranges  0x00000000       0xc8 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .debug_line    0x00000000      0x67c C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .debug_str     0x00000000      0xafc C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .comment       0x00000000       0x71 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .ARM.attributes
+                0x00000000       0x32 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
+ .debug_frame   0x00000000      0x2b4 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(GomEPS.o)
  .text          0x00000000        0x0 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(IsisEPS.o)
  .data          0x00000000        0x0 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(IsisEPS.o)
  .bss           0x00000000        0x8 C:/ISIS/workspace/satellite-subsystems/satellite-subsystems/lib\libSatelliteSubsystemsD.a(IsisEPS.o)
@@ -2647,6 +2870,13 @@ Discarded input sections
  .ARM.attributes
                 0x00000000       0x30 c:/isis/application/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc_s.a(lib_a-puts.o)
  .debug_frame   0x00000000       0x48 c:/isis/application/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc_s.a(lib_a-puts.o)
+ .text          0x00000000        0x0 c:/isis/application/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc_s.a(lib_a-strcpy.o)
+ .data          0x00000000        0x0 c:/isis/application/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc_s.a(lib_a-strcpy.o)
+ .bss           0x00000000        0x0 c:/isis/application/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc_s.a(lib_a-strcpy.o)
+ .text.strcpy   0x00000000       0x18 c:/isis/application/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc_s.a(lib_a-strcpy.o)
+ .ARM.attributes
+                0x00000000       0x30 c:/isis/application/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc_s.a(lib_a-strcpy.o)
+ .debug_frame   0x00000000       0x20 c:/isis/application/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc_s.a(lib_a-strcpy.o)
  .text          0x00000000        0x0 c:/isis/application/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc_s.a(lib_a-vfprintf.o)
  .data          0x00000000        0x0 c:/isis/application/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc_s.a(lib_a-vfprintf.o)
  .bss           0x00000000        0x0 c:/isis/application/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc_s.a(lib_a-vfprintf.o)
@@ -2788,7 +3018,7 @@ LOAD ./src/TestingDemos/TelemetryTestingDemo.o
 LOAD ./src/TestingDemos/TrxvuTestingDemo.o
 LOAD ./src/SubSystemModules/PowerManagment/EPS.o
 LOAD ./src/SubSystemModules/PowerManagment/EPSOperationModes.o
-LOAD ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
+LOAD ./src/SubSystemModules/Maintenance/Maintenance.o
 LOAD ./src/SubSystemModules/Housekepping/TelemetryCollector.o
 LOAD ./src/SubSystemModules/Communication/SubsystemCommands/EPS_Commands.o
 LOAD ./src/SubSystemModules/Communication/SubsystemCommands/FS_Commands.o
@@ -3024,7 +3254,7 @@ END GROUP
                 0x20006b5c       0x1c ./src/SubSystemModules/PowerManagment/EPS.o
                 0x20006b5c                EPS_Conditioning
  .text.Maintenance
-                0x20006b78       0x14 ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
+                0x20006b78       0x14 ./src/SubSystemModules/Maintenance/Maintenance.o
                 0x20006b78                Maintenance
  .text.TelemetryCollectorLogic
                 0x20006b8c       0x14 ./src/SubSystemModules/Housekepping/TelemetryCollector.o
@@ -3540,7 +3770,7 @@ OUTPUT(GlobusSatProject.elf elf32-littlearm)
  .ARM.attributes
                 0x00000570       0x32 ./src/SubSystemModules/PowerManagment/EPS.o
  .ARM.attributes
-                0x000005a2       0x32 ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
+                0x000005a2       0x32 ./src/SubSystemModules/Maintenance/Maintenance.o
  .ARM.attributes
                 0x000005d4       0x32 ./src/SubSystemModules/Housekepping/TelemetryCollector.o
  .ARM.attributes
@@ -3639,7 +3869,7 @@ OUTPUT(GlobusSatProject.elf elf32-littlearm)
 .comment        0x00000000       0x70
  .comment       0x00000000       0x70 ./src/SubSystemModules/PowerManagment/EPS.o
                                  0x71 (size before relaxing)
- .comment       0x00000000       0x71 ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
+ .comment       0x00000000       0x71 ./src/SubSystemModules/Maintenance/Maintenance.o
  .comment       0x00000000       0x71 ./src/SubSystemModules/Housekepping/TelemetryCollector.o
  .comment       0x00000000       0x71 ./src/SubSystemModules/Communication/TRXVU.o
  .comment       0x00000000       0x71 ./src/InitSystem.o
@@ -3691,7 +3921,7 @@ OUTPUT(GlobusSatProject.elf elf32-littlearm)
  .debug_frame   0x00000904       0x28 c:/isis/application/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc_s.a(lib_a-strncmp.o)
  .debug_frame   0x0000092c       0x20 c:/isis/application/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc_s.a(lib_a-msizer.o)
  .debug_frame   0x0000094c       0xf0 ./src/SubSystemModules/PowerManagment/EPS.o
- .debug_frame   0x00000a3c      0x100 ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
+ .debug_frame   0x00000a3c      0x100 ./src/SubSystemModules/Maintenance/Maintenance.o
  .debug_frame   0x00000b3c       0xd0 ./src/SubSystemModules/Housekepping/TelemetryCollector.o
  .debug_frame   0x00000c0c      0x220 ./src/SubSystemModules/Communication/TRXVU.o
  .debug_frame   0x00000e2c      0x100 ./src/InitSystem.o
@@ -3733,7 +3963,7 @@ OUTPUT(GlobusSatProject.elf elf32-littlearm)
 
 .debug_info     0x00000000     0x6c64
  .debug_info    0x00000000      0x5cd ./src/SubSystemModules/PowerManagment/EPS.o
- .debug_info    0x000005cd      0x20f ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
+ .debug_info    0x000005cd      0x20f ./src/SubSystemModules/Maintenance/Maintenance.o
  .debug_info    0x000007dc      0x2b4 ./src/SubSystemModules/Housekepping/TelemetryCollector.o
  .debug_info    0x00000a90      0x675 ./src/SubSystemModules/Communication/TRXVU.o
  .debug_info    0x00001105      0x34c ./src/InitSystem.o
@@ -3760,7 +3990,7 @@ OUTPUT(GlobusSatProject.elf elf32-littlearm)
 
 .debug_abbrev   0x00000000     0x1a0a
  .debug_abbrev  0x00000000      0x1de ./src/SubSystemModules/PowerManagment/EPS.o
- .debug_abbrev  0x000001de       0xd5 ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
+ .debug_abbrev  0x000001de       0xd5 ./src/SubSystemModules/Maintenance/Maintenance.o
  .debug_abbrev  0x000002b3       0xe0 ./src/SubSystemModules/Housekepping/TelemetryCollector.o
  .debug_abbrev  0x00000393      0x140 ./src/SubSystemModules/Communication/TRXVU.o
  .debug_abbrev  0x000004d3      0x11d ./src/InitSystem.o
@@ -3787,7 +4017,7 @@ OUTPUT(GlobusSatProject.elf elf32-littlearm)
 
 .debug_loc      0x00000000     0x226c
  .debug_loc     0x00000000      0x18c ./src/SubSystemModules/PowerManagment/EPS.o
- .debug_loc     0x0000018c      0x1b8 ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
+ .debug_loc     0x0000018c      0x1b8 ./src/SubSystemModules/Maintenance/Maintenance.o
  .debug_loc     0x00000344      0x160 ./src/SubSystemModules/Housekepping/TelemetryCollector.o
  .debug_loc     0x000004a4      0x3c8 ./src/SubSystemModules/Communication/TRXVU.o
  .debug_loc     0x0000086c      0x18c ./src/InitSystem.o
@@ -3814,7 +4044,7 @@ OUTPUT(GlobusSatProject.elf elf32-littlearm)
  .debug_aranges
                 0x00000000       0x60 ./src/SubSystemModules/PowerManagment/EPS.o
  .debug_aranges
-                0x00000060       0x68 ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
+                0x00000060       0x68 ./src/SubSystemModules/Maintenance/Maintenance.o
  .debug_aranges
                 0x000000c8       0x58 ./src/SubSystemModules/Housekepping/TelemetryCollector.o
  .debug_aranges
@@ -3864,7 +4094,7 @@ OUTPUT(GlobusSatProject.elf elf32-littlearm)
 
 .debug_ranges   0x00000000      0x748
  .debug_ranges  0x00000000       0x50 ./src/SubSystemModules/PowerManagment/EPS.o
- .debug_ranges  0x00000050       0x58 ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
+ .debug_ranges  0x00000050       0x58 ./src/SubSystemModules/Maintenance/Maintenance.o
  .debug_ranges  0x000000a8       0x48 ./src/SubSystemModules/Housekepping/TelemetryCollector.o
  .debug_ranges  0x000000f0       0xb8 ./src/SubSystemModules/Communication/TRXVU.o
  .debug_ranges  0x000001a8       0x50 ./src/InitSystem.o
@@ -3888,77 +4118,77 @@ OUTPUT(GlobusSatProject.elf elf32-littlearm)
  .debug_ranges  0x000006f0       0x30 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(board_lowlevel.o)
  .debug_ranges  0x00000720       0x28 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(board_memories.o)
 
-.debug_line     0x00000000     0x2dfb
- .debug_line    0x00000000      0x250 ./src/SubSystemModules/PowerManagment/EPS.o
- .debug_line    0x00000250      0x1ae ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
- .debug_line    0x000003fe      0x154 ./src/SubSystemModules/Housekepping/TelemetryCollector.o
- .debug_line    0x00000552      0x3a3 ./src/SubSystemModules/Communication/TRXVU.o
- .debug_line    0x000008f5      0x2a2 ./src/InitSystem.o
- .debug_line    0x00000b97      0x238 ./src/main.o
- .debug_line    0x00000dcf       0xe3 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/lib\libHALD.a(WatchDogTimerNoOS.o)
- .debug_line    0x00000eb2      0x147 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/lib\libHALD.a(WatchDogTimerOS.o)
- .debug_line    0x00000ff9      0x1fa C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/lib\libHALD.a(LED.o)
- .debug_line    0x000011f3      0x82a C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/lib\libFreeRTOSD.a(tasks.o)
- .debug_line    0x00001a1d       0x77 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/lib\libFreeRTOSD.a(hooks.o)
- .debug_line    0x00001a94       0xf9 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/lib\libFreeRTOSD.a(standardMemMang.o)
- .debug_line    0x00001b8d      0x1ea C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/lib\libFreeRTOSD.a(port.o)
- .debug_line    0x00001d77      0x10e C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/lib\libFreeRTOSD.a(list.o)
- .debug_line    0x00001e85      0x356 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(syscalls.o)
- .debug_line    0x000021db       0xb2 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(aic.o)
- .debug_line    0x0000228d      0x101 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(cp15.o)
- .debug_line    0x0000238e      0x2cc C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(dbgu.o)
- .debug_line    0x0000265a      0x1b7 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(pio.o)
- .debug_line    0x00002811      0x136 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(pit.o)
- .debug_line    0x00002947       0xda C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(ExitHandler.o)
- .debug_line    0x00002a21      0x109 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(board_cstartup.o)
- .debug_line    0x00002b2a       0x6f C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(cp15_asm.o)
- .debug_line    0x00002b99      0x122 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(board_lowlevel.o)
- .debug_line    0x00002cbb      0x140 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(board_memories.o)
+.debug_line     0x00000000     0x2df0
+ .debug_line    0x00000000      0x252 ./src/SubSystemModules/PowerManagment/EPS.o
+ .debug_line    0x00000252      0x1a1 ./src/SubSystemModules/Maintenance/Maintenance.o
+ .debug_line    0x000003f3      0x154 ./src/SubSystemModules/Housekepping/TelemetryCollector.o
+ .debug_line    0x00000547      0x3a3 ./src/SubSystemModules/Communication/TRXVU.o
+ .debug_line    0x000008ea      0x2a2 ./src/InitSystem.o
+ .debug_line    0x00000b8c      0x238 ./src/main.o
+ .debug_line    0x00000dc4       0xe3 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/lib\libHALD.a(WatchDogTimerNoOS.o)
+ .debug_line    0x00000ea7      0x147 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/lib\libHALD.a(WatchDogTimerOS.o)
+ .debug_line    0x00000fee      0x1fa C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/lib\libHALD.a(LED.o)
+ .debug_line    0x000011e8      0x82a C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/lib\libFreeRTOSD.a(tasks.o)
+ .debug_line    0x00001a12       0x77 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/lib\libFreeRTOSD.a(hooks.o)
+ .debug_line    0x00001a89       0xf9 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/lib\libFreeRTOSD.a(standardMemMang.o)
+ .debug_line    0x00001b82      0x1ea C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/lib\libFreeRTOSD.a(port.o)
+ .debug_line    0x00001d6c      0x10e C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/lib\libFreeRTOSD.a(list.o)
+ .debug_line    0x00001e7a      0x356 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(syscalls.o)
+ .debug_line    0x000021d0       0xb2 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(aic.o)
+ .debug_line    0x00002282      0x101 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(cp15.o)
+ .debug_line    0x00002383      0x2cc C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(dbgu.o)
+ .debug_line    0x0000264f      0x1b7 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(pio.o)
+ .debug_line    0x00002806      0x136 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(pit.o)
+ .debug_line    0x0000293c       0xda C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(ExitHandler.o)
+ .debug_line    0x00002a16      0x109 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(board_cstartup.o)
+ .debug_line    0x00002b1f       0x6f C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(cp15_asm.o)
+ .debug_line    0x00002b8e      0x122 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(board_lowlevel.o)
+ .debug_line    0x00002cb0      0x140 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(board_memories.o)
 
-.debug_str      0x00000000     0x2e9c
+.debug_str      0x00000000     0x2e8f
  .debug_str     0x00000000      0x4e0 ./src/SubSystemModules/PowerManagment/EPS.o
                                 0x56c (size before relaxing)
- .debug_str     0x000004e0      0x153 ./src/SubSystemModules/Housekepping/Maintenance/Maintenance.o
-                                0x279 (size before relaxing)
- .debug_str     0x00000633      0x241 ./src/SubSystemModules/Housekepping/TelemetryCollector.o
+ .debug_str     0x000004e0      0x146 ./src/SubSystemModules/Maintenance/Maintenance.o
+                                0x26c (size before relaxing)
+ .debug_str     0x00000626      0x241 ./src/SubSystemModules/Housekepping/TelemetryCollector.o
                                 0x36a (size before relaxing)
- .debug_str     0x00000874      0x594 ./src/SubSystemModules/Communication/TRXVU.o
+ .debug_str     0x00000867      0x594 ./src/SubSystemModules/Communication/TRXVU.o
                                 0x6e1 (size before relaxing)
- .debug_str     0x00000e08      0x13c ./src/InitSystem.o
+ .debug_str     0x00000dfb      0x13c ./src/InitSystem.o
                                 0x2d4 (size before relaxing)
- .debug_str     0x00000f44      0x19a ./src/main.o
+ .debug_str     0x00000f37      0x19a ./src/main.o
                                 0x2d7 (size before relaxing)
- .debug_str     0x000010de       0xa3 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/lib\libHALD.a(WatchDogTimerNoOS.o)
+ .debug_str     0x000010d1       0xa3 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/lib\libHALD.a(WatchDogTimerNoOS.o)
                                 0x2f3 (size before relaxing)
- .debug_str     0x00001181       0xfa C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/lib\libHALD.a(WatchDogTimerOS.o)
+ .debug_str     0x00001174       0xfa C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/lib\libHALD.a(WatchDogTimerOS.o)
                                 0x22e (size before relaxing)
- .debug_str     0x0000127b       0x72 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/lib\libHALD.a(LED.o)
+ .debug_str     0x0000126e       0x72 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/hal/lib\libHALD.a(LED.o)
                                 0x31d (size before relaxing)
- .debug_str     0x000012ed      0x859 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/lib\libFreeRTOSD.a(tasks.o)
+ .debug_str     0x000012e0      0x859 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/lib\libFreeRTOSD.a(tasks.o)
                                 0x96e (size before relaxing)
- .debug_str     0x00001b46       0x3a C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/lib\libFreeRTOSD.a(hooks.o)
+ .debug_str     0x00001b39       0x3a C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/lib\libFreeRTOSD.a(hooks.o)
                                 0x17e (size before relaxing)
- .debug_str     0x00001b80       0x6f C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/lib\libFreeRTOSD.a(standardMemMang.o)
+ .debug_str     0x00001b73       0x6f C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/lib\libFreeRTOSD.a(standardMemMang.o)
                                 0x18e (size before relaxing)
- .debug_str     0x00001bef      0x195 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/lib\libFreeRTOSD.a(port.o)
+ .debug_str     0x00001be2      0x195 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/lib\libFreeRTOSD.a(port.o)
                                 0x2f6 (size before relaxing)
- .debug_str     0x00001d84       0xa1 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/lib\libFreeRTOSD.a(list.o)
+ .debug_str     0x00001d77       0xa1 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/freertos/lib\libFreeRTOSD.a(list.o)
                                 0x257 (size before relaxing)
- .debug_str     0x00001e25      0x1ef C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(syscalls.o)
+ .debug_str     0x00001e18      0x1ef C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(syscalls.o)
                                 0x30e (size before relaxing)
- .debug_str     0x00002014      0x104 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(aic.o)
+ .debug_str     0x00002007      0x104 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(aic.o)
                                 0x1be (size before relaxing)
- .debug_str     0x00002118       0xd5 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(cp15.o)
+ .debug_str     0x0000210b       0xd5 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(cp15.o)
                                 0x1e9 (size before relaxing)
- .debug_str     0x000021ed      0x4ef C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(dbgu.o)
+ .debug_str     0x000021e0      0x4ef C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(dbgu.o)
                                 0x65a (size before relaxing)
- .debug_str     0x000026dc      0x180 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(pio.o)
+ .debug_str     0x000026cf      0x180 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(pio.o)
                                 0x408 (size before relaxing)
- .debug_str     0x0000285c       0x94 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(pit.o)
+ .debug_str     0x0000284f       0x94 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(pit.o)
                                 0x17c (size before relaxing)
- .debug_str     0x000028f0      0x11f C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(ExitHandler.o)
+ .debug_str     0x000028e3      0x11f C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(ExitHandler.o)
                                 0x24e (size before relaxing)
- .debug_str     0x00002a0f      0x27d C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(board_lowlevel.o)
+ .debug_str     0x00002a02      0x27d C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(board_lowlevel.o)
                                 0x4c6 (size before relaxing)
- .debug_str     0x00002c8c      0x210 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(board_memories.o)
+ .debug_str     0x00002c7f      0x210 C:/ISIS/workspace/GlobusSatProject/GlobusSatProject/..//hal/at91/lib\libAt91D.a(board_memories.o)
                                 0x641 (size before relaxing)
