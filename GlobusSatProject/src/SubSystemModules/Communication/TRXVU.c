@@ -163,23 +163,34 @@ int BeaconSetBitrate() {
 	return 0;
 }
 
-void BeaconLogic() {
+void BeaconLogic()
+{
 
+	if(!CheckTransmitionAllowed()){
+			return;
+		}
 
+		int err = 0;
+		if (!CheckExecutionTime(g_prev_beacon_time, g_beacon_interval_time)) {
+			return;
+		}
 
-	int err = 0;
-	spl_command_type_t type;
-	trxvu_subtypes_t subtype;
+		WOD_Telemetry_t wod = { 0 };
+		GetCurrentWODTelemetry(&wod);
 
-	sat_packet_t cmd={0};
+		sat_packet_t cmd = { 0 };
+		err = AssembleCommand((unsigned char*) &wod, sizeof(wod), trxvu_cmd_type,
+				BEACON_SUBTYPE, 0xFFFFFFFF, &cmd);
+		if (0 != err) {
+			return;
+		}
 
-	unsigned int curr_time;
-	Time_getUnixEpoch(&curr_time);
+		Time_getUnixEpoch(&g_prev_beacon_time);
 
-	int err= TransmitSplPacket(sat_packet_t *packet, int *avalFrames)
-	if (ACK_RECEIVE_COMM==curr_time)
+		BeaconSetBitrate();
 
-
+		TransmitSplPacket(&cmd, NULL);
+		IsisTrxvu_tcSetAx25Bitrate(ISIS_TRXVU_I2C_BUS_INDEX, trxvu_bitrate_9600);
 }
 
 int muteTRXVU(time_unix duration) {

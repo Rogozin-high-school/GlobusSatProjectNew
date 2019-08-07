@@ -18,8 +18,11 @@ int ClearDelayedCMD_FromBuffer(unsigned int start_addr, unsigned int end_addr)
 	return 0;
 }
 
-int ParseDataToCommand(unsigned char * data, unsigned int length, sat_packet_t *cmd)
+int ParseDataToCommand(unsigned char * data,sat_packet_t *cmd)
 {
+
+	memcpy(cmd->ID,data,sizeof(cmd->ID));
+
 	return 0;
 }
 
