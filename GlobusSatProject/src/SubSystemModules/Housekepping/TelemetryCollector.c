@@ -73,6 +73,7 @@ int GetTelemetryFilenameByType(tlm_type_t tlm_type, char filename[MAX_F_FILE_NAM
 
 }
 //if the for saving arrived we will need to save
+//checking if the time for saving and saving the file
 void TelemetryCollectorLogic()
 {
 }
