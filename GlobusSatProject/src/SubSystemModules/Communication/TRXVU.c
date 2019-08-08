@@ -4,9 +4,10 @@
 
 #include <hal/Timing/Time.h>
 #include <hal/errors.h>
-
+#include "SatCommandHandler.h"
+#include <satellite-subsystems/IsisAntS.h>
 #include <satellite-subsystems/IsisTRXVU.h>
-
+#include <SubSystemModules/Communication/SatCommandHandler.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -16,8 +17,6 @@
 #include "ActUponCommand.h"
 #include "SatCommandHandler.h"
 #include "TLM_management.h"
-#include  "SysI2CAddr.h"
-#include "IsisAntS.h"
 #include "SubSystemModules/PowerManagment/EPS.h"
 #include "SubSystemModules/Maintenance/Maintenance.h"
 #include "SubSystemModules/Housekepping/TelemetryCollector.h"
@@ -182,7 +181,7 @@ void BeaconLogic()
 		GetCurrentWODTelemetry(&wod);
 
 		sat_packet_t cmd = { 0 };
-		err = AssembleCommand((unsigned char*) &wod, sizeof(wod), trxvu_cmd_type,
+		err = AssmbleCommand((unsigned char*)&wod, sizeof(wod), trxvu_cmd_type,
 				BEACON_SUBTYPE, 0xFFFFFFFF, &cmd);
 		if (0 != err) {
 			return;
