@@ -83,12 +83,42 @@ void TelemetrySaveEPS()
 
 void TelemetrySaveTRXVU()
 {
+	int err = 0;
+		ISIStrxvuTxTelemetry tx_tlm;
+		err = IsisTrxvu_tcGetTelemetryAll(ISIS_TRXVU_I2C_BUS_INDEX, &tx_tlm);
+		if (err == 0)
+		{
+			c_fileWrite(FILENAME_TX_TLM, &tx_tlm);
+		}
+
+		ISIStrxvuTxTelemetry_revC revc_tx_tlm;
+		err = IsisTrxvu_tcGetTelemetryAll_revC(ISIS_TRXVU_I2C_BUS_INDEX,
+				&revc_tx_tlm);
+		if (err == 0)
+		{
+			c_fileWrite(FILENAME_TX_REVC, &revc_tx_tlm);
+		}
+
+		ISIStrxvuRxTelemetry rx_tlm;
+		err = IsisTrxvu_rcGetTelemetryAll(ISIS_TRXVU_I2C_BUS_INDEX, &rx_tlm);
+		if (err == 0)
+		{
+			c_fileWrite(FILENAME_RX_TLM, &rx_tlm);
+		}
+
+		ISIStrxvuRxTelemetry_revC revc_rx_tlm;
+		err = IsisTrxvu_rcGetTelemetryAll_revC(ISIS_TRXVU_I2C_BUS_INDEX,
+				&revc_rx_tlm);
+		if (err == 0)
+		{
+			c_fileWrite(FILENAME_RX_REVC, &revc_rx_tlm);
+		}
 }
 
 void TelemetrySaveANT()
 {
 }
-
+//its take to poer the panal half sec.
 void TelemetrySaveSolarPanels()
 {
 }
