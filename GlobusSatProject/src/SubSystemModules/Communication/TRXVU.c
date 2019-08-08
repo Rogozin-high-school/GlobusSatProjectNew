@@ -221,7 +221,29 @@ int TransmitDataAsSPL_Packet(sat_packet_t *cmd, unsigned char *data,
 }
 
 int TransmitSplPacket(sat_packet_t *packet, int *avalFrames) {
-	return 0;
+
+	if (!CheckTransmitionAllowed()) {
+			return -1;
+		}
+
+		if (NULL == packet) {
+			return E_NOT_INITIALIZED;
+		}
+
+		int err = 0;
+		unsigned int data_length = packet->length + sizeof(packet->length)
+				+ sizeof(packet->cmd_subtype) + sizeof(packet->cmd_type)
+				+ sizeof(packet->ID);
+
+		if (xSemaphoreTake(xIsTransmitting,SECONDS_TO_TICKS(1)) != pdTRUE) {
+			return E_GET_SEMAPHORE_FAILED;
+		}
+		err = IsisTrxvu_tcSendAX25DefClSign(ISIS_TRXVU_I2C_BUS_INDEX,
+				(unsigned char*) packet, data_length, (unsigned char*) &avalFrames);
+
+		xSemaphoreGive(xIsTransmitting);
+
+		return err;
 }
 
 int UpdateBeaconBaudCycle(unsigned char cycle)
