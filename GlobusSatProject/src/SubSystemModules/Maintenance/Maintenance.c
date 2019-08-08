@@ -48,12 +48,21 @@ void ResetGroundCommWDT()
 // and return a boolean describing it.
 Boolean IsGroundCommunicationWDTKick()
 {
+	if ( DEFAULT_NO_COMM_WDT_KICK_TIME)
+		restart();//LAST TIME THAT WAS COMMUNICATION
 	return FALSE;
 }
 
 //TODO: add to command dictionary
 int SetGsWdtKickTime(time_unix new_gs_wdt_kick_time)
 {
+
+	if (new_gs_wdt_kick_time< 86400*2 || new_gs_wdt_kick_time>1*86400)
+		return -1;
+	int err=  FRAM_write(&new_gs_wdt_kick_time, LAST_WAKEUP_TIME_ADDR, LAST_WAKEUP_TIME_SIZE);
+
+	if (err!=0)
+	  return -1;
 	return 0;
 }
 
@@ -61,6 +70,7 @@ time_unix GetGsWdtKickTime()
 {
 	time_unix no_comm_thresh = 0;
 	return no_comm_thresh;
+
 
 }
 
