@@ -25,7 +25,7 @@ int GetTelemetryFilenameByType(tlm_type_t tlm_type, char filename[MAX_F_FILE_NAM
 {
 
 	if (filename !=-1)
-		return -1;
+		return E_INPUT_POINTER_NULL;
 	switch(tlm_type)
 		{
 
@@ -66,13 +66,13 @@ int GetTelemetryFilenameByType(tlm_type_t tlm_type, char filename[MAX_F_FILE_NAM
 			            strcpy(filename,  FILENAME_ANTENNA_TLM);
 			            break;
 		default:
-			   return -1;
+			   return E_PARAM_OUTOFBOUNDS;
 			   break;
 		}
-		return 0;
+		return E_NO_SS_ERR;
 
 }
-
+//if the for saving arrived we will need to save
 void TelemetryCollectorLogic()
 {
 }
