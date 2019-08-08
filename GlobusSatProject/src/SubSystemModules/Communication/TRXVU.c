@@ -215,11 +215,18 @@ void UnMuteTRXVU() {
 }
 
 Boolean GetMuteFlag() {
-	return FALSE;
+
+	if (g_mute_flag)
+		return MUTE_ON;
+	return MUTE_OFF;
+	//return g_mute_flag;
 }
 
 Boolean CheckForMuteEnd() {
-	return FALSE;
+
+	time_unix curr_tick_time = 0;
+		Time_getUnixEpoch(&curr_tick_time);
+		return (curr_tick_time > g_mute_end_time);
 }
 
 int GetTrxvuBitrate(ISIStrxvuBitrateStatus *bitrate) {

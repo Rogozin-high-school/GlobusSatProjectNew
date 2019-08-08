@@ -23,6 +23,17 @@
 
 int GetTelemetryFilenameByType(tlm_type_t tlm_type, char filename[MAX_F_FILE_NAME_SIZE])
 {
+	/*
+	 * #define FILENAME_TX_TLM					"tx_tlm"
+       #define FILENAME_TX_REVC				"tx_revc"
+        #define FILENAME_RX_TLM					"rx_tlm"
+        #define FILENAME_RX_REVC				"rx_revC"
+#define FILENAME_RX_FRAME				"rx_frame"
+#define FILENAME_ANTENNA_TLM			"ant_tlm"
+
+	 * */
+
+
 	return 0;
 }
 
