@@ -34,7 +34,7 @@ typedef struct __attribute__ ((__packed__)) sat_packet_t
  * @param[out] cmd pointer to parsed command buffer
  * @return	errors according to CMD_ERR
  */
-int ParseDataToCommand(unsigned char * data, unsigned int length, sat_packet_t *cmd);
+int ParseDataToCommand(unsigned char * data, sat_packet_t *cmd);
 
 /*!
  * @brief parses given frame from TRXVU into 'sat_command_t' structure.

@@ -16,7 +16,8 @@
 #include "ActUponCommand.h"
 #include "SatCommandHandler.h"
 #include "TLM_management.h"
-
+#include  "SysI2CAddr.h"
+#include "IsisAntS.h"
 #include "SubSystemModules/PowerManagment/EPS.h"
 #include "SubSystemModules/Maintenance/Maintenance.h"
 #include "SubSystemModules/Housekepping/TelemetryCollector.h"
@@ -73,7 +74,9 @@ int InitTrxvu() {
 		vTaskDelay(100);
 
 		// antenna init
+
 		ISISantsI2Caddress myAntennaAddress;
+
 		myAntennaAddress.addressSideA = ANTS_I2C_SIDE_A_ADDR;
 		myAntennaAddress.addressSideB = ANTS_I2C_SIDE_B_ADDR;
 
@@ -213,7 +216,8 @@ int GetTrxvuBitrate(ISIStrxvuBitrateStatus *bitrate) {
 }
 
 int TransmitDataAsSPL_Packet(sat_packet_t *cmd, unsigned char *data,
-		unsigned int length) {
+		unsigned int length)
+{
 	return 0;
 }
 

@@ -20,19 +20,7 @@ int ClearDelayedCMD_FromBuffer(unsigned int start_addr, unsigned int end_addr)
 
 int ParseDataToCommand(unsigned char * data,sat_packet_t *cmd)
 {
-	/*
-	 * DIANa
-	 unsigned int off;
-	//move the data from address data to of cmd
-	 memcpy(&(cmd->ID),data,sizeof(cmd->ID));
-	 memcpy(&(cmd->cmd_subtype),data+,sizeof(cmd->cmd_subtype));
-	 memcpy(&(cmd->cmd_type),data,sizeof(cmd->cmd_type));
-	 memcpy(&(cmd->data),data,sizeof(cmd->data));
-	 memcpy(&(cmd->length),data,sizeof(cmd->length));
 
-	 if (cmd !=NULL)
-
-		return command_succsess;*/
 
 	if(NULL == data || NULL == cmd){
 		return null_pointer_error;
