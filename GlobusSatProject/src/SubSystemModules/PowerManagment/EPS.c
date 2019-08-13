@@ -95,6 +95,13 @@ int EPS_Conditioning()
 		 printf("error to get Battery Voltages\n");
 	 }
 
+	//an =FRAM_read((unsigned char *)&,alpha,sizeof(alpha));
+
+	if (an!=0)
+		{
+		 printf("cannot read alpha\n");
+		}
+
 	 an= GetThresholdVoltages(eps_threshold_voltages);  // adding the levels for eps
 
 	curr_avg= alpha*prev_avg + (1-alpha)*vbatt; // funcation
@@ -199,6 +206,7 @@ int UpdateAlpha(float new_alpha)
 	if(FRAM_write((unsigned char*)&new_alpha,alpha,sizeof(new_alpha))!=0) //כשלון הכתיבה לפראם
 		 	{
 				return -1;
+				printf("error: cannot to write alpha to fram\n");
 			}
 			return 0;
 }
