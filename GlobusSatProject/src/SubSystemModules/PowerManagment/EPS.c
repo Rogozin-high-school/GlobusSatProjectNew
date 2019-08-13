@@ -91,16 +91,16 @@ int EPS_Conditioning()
 
 	if (an ==-1)
 	 {
-		 printf("error to get Battery Voltage");
+		 printf("error to get Battery Voltages");
 	 }
 
-	an= GetThresholdVoltages(eps_threshold_voltages);  // adding the levels for eps
+	//an= GetThresholdVoltages(eps_threshold_voltages);  // adding the levels for eps
 
 	curr_avg= alpha*prev_avg + (1-alpha)*vbatt; // funcation
 
-	if (curr_avg > vbatt)
+	if (curr_avg > prev_avg)
 	{
-		if (vbatt > eps_threshold_voltages[INDEX_UP_FULL])
+		if (prev_avg > eps_threshold_voltages[INDEX_UP_FULL])
 		{
 			an= EnterFullMode();
 			if (an ==-1)
@@ -114,7 +114,7 @@ int EPS_Conditioning()
 
 		}
 		else
-			if (vbatt > eps_threshold_voltages[INDEX_UP_CRUISE])
+			if (prev_avg > eps_threshold_voltages[INDEX_UP_CRUISE])
 			{
 			  an=  EnterCruiseMode();
 			  if (an ==-1)
@@ -128,7 +128,7 @@ int EPS_Conditioning()
 
 			}
 			else
-				if (vbatt > eps_threshold_voltages[INDEX_UP_SAFE])
+				if (prev_avg > eps_threshold_voltages[INDEX_UP_SAFE])
 				{
 				  an=  EnterSafeMode();
 				  if (an ==-1)
@@ -143,11 +143,50 @@ int EPS_Conditioning()
 	  }
 	else
 	{
+		if (vbatt > eps_threshold_voltages[INDEX_UP_FULL])
+				{
+					an= EnterFullMode();
+					if (an ==-1)
+						 {
+							 printf("error to go Full Mode");
+						 }
+					else
+					{
+						printf("Entering to Full Mode\n");
+					}
 
+				}
+				else
+					if (vbatt > eps_threshold_voltages[INDEX_UP_CRUISE])
+					{
+					  an=  EnterCruiseMode();
+					  if (an ==-1)
+					  	{
+					  	  printf("error to go Cruise Mode");
+					  	}
+					  else
+					  {
+						  printf("Entering to Cruise Mode\n");
+					  }
+
+					}
+					else
+						if (vbatt > eps_threshold_voltages[INDEX_UP_SAFE])
+						{
+						  an=  EnterSafeMode();
+						  if (an ==-1)
+						  	{
+						  	  printf("error to go Safe Mode");
+						  	}
+						  else
+						   {
+						    printf("Entering to Safe Mode\n");
+						   }
+						}
 	}
 
 
-
+        prev_avg=curr_avg;
 		an= EnterCriticalMode();
 
 	return an;
