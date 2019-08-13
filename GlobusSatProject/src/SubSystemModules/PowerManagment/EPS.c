@@ -80,7 +80,77 @@ int EPS_Init()
 
 int EPS_Conditioning()
 {
-	return 0;
+	voltage_t vbatt;
+	voltage_t curr_avg;
+
+	//voltage_t prev_avg = 0;
+
+	int an=0;
+
+	an = GetBatteryVoltage(&vbatt);
+
+	if (an ==-1)
+	 {
+		 printf("error to get Battery Voltage");
+	 }
+
+	an= GetThresholdVoltages(eps_threshold_voltages);  // adding the levels for eps
+
+	curr_avg= alpha*prev_avg + (1-alpha)*vbatt; // funcation
+
+	if (curr_avg > vbatt)
+	{
+		if (vbatt > eps_threshold_voltages[INDEX_UP_FULL])
+		{
+			an= EnterFullMode();
+			if (an ==-1)
+				 {
+					 printf("error to go Full Mode");
+				 }
+			else
+			{
+				printf("Entering to Full Mode\n");
+			}
+
+		}
+		else
+			if (vbatt > eps_threshold_voltages[INDEX_UP_CRUISE])
+			{
+			  an=  EnterCruiseMode();
+			  if (an ==-1)
+			  	{
+			  	  printf("error to go Cruise Mode");
+			  	}
+			  else
+			  {
+				  printf("Entering to Cruise Mode\n");
+			  }
+
+			}
+			else
+				if (vbatt > eps_threshold_voltages[INDEX_UP_SAFE])
+				{
+				  an=  EnterSafeMode();
+				  if (an ==-1)
+				  	{
+				  	  printf("error to go Safe Mode");
+				  	}
+				  else
+				   {
+				    printf("Entering to Safe Mode\n");
+				   }
+				}
+	  }
+	else
+	{
+
+	}
+
+
+
+		an= EnterCriticalMode();
+
+	return an;
 }
 
 int UpdateAlpha(float new_alpha)
