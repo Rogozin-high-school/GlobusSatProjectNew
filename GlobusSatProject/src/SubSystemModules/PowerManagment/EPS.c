@@ -203,11 +203,15 @@ int EPS_Conditioning()
 int UpdateAlpha(float new_alpha)
 {
 	//******done by diana*****
-
+    if (new_alpha <0)
+    {
+    	printf("error: the new paramater is nor right\n");
+    	return -2;
+    }
 	if(FRAM_write((unsigned char*)&new_alpha,EPS_ALPHA_FILTER_VALUE_ADDR,sizeof(EPS_ALPHA_FILTER_VALUE_SIZE))!=0) //כשלון הכתיבה לפראם
 		 	{
-				return -1;
-				printf("error: cannot to write alpha to fram\n");
+		     printf("error: cannot to write alpha to fram\n");
+		     return -1;
 			}
 	else
 	{
@@ -218,6 +222,8 @@ int UpdateAlpha(float new_alpha)
 
 int UpdateThresholdVoltages(voltage_t thresh_volts[NUMBER_OF_THRESHOLD_VOLTAGES])
 {
+	//******done by diana*****
+	//eps_threshold_voltages
 	return 0;
 }
 
