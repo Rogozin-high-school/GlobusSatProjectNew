@@ -95,7 +95,7 @@ int EPS_Conditioning()
 		 printf("error to get Battery Voltages\n");
 	 }
 
-	an =FRAM_read((unsigned char *)&alpha,EPS_ALPHA_FILTER_VALUE_ADDR,sizeof(EPS_ALPHA_FILTER_VALUE_SIZE));
+	an =FRAM_read((unsigned char *)&alpha,EPS_ALPHA_FILTER_VALUE_ADDR,sizeof(EPS_ALPHA_FILTER_VALUE_SIZE)); //or using:  GetAlpha(&alpha)
 
 	if (an!=0)
 		{
@@ -234,7 +234,31 @@ int GetThresholdVoltages(voltage_t thresh_volts[NUMBER_OF_THRESHOLD_VOLTAGES])
 
 int GetAlpha(float *alpha)
 {
-	return 0;
+	int an =0;
+
+	an = FRAM_read((unsigned char *)&alpha,EPS_ALPHA_FILTER_VALUE_ADDR,sizeof(EPS_ALPHA_FILTER_VALUE_SIZE));
+
+	if (an==0 )
+	{
+		printf("success to get alpha");
+
+	}
+
+	else
+		if (an ==-1)
+		{
+          printf("obtaining lock for FRAM access fails/ NULL input array");
+          an=-2;
+		}
+
+		else
+			if (an==-2)
+			{
+				an=-1;
+	            printf("NULL input array");
+			}
+
+	return an;
 }
 
 int RestoreDefaultAlpha()
