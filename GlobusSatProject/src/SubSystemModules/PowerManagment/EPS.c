@@ -195,7 +195,12 @@ int EPS_Conditioning()
 
 int UpdateAlpha(float new_alpha)
 {
-	return 0;
+
+	if(FRAM_write((unsigned char*)&new_alpha,alpha,sizeof(new_alpha))!=0) //כשלון הכתיבה לפראם
+		 	{
+				return -1;
+			}
+			return 0;
 }
 
 int UpdateThresholdVoltages(voltage_t thresh_volts[NUMBER_OF_THRESHOLD_VOLTAGES])
