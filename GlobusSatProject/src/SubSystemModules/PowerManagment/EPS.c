@@ -279,7 +279,8 @@ int RestoreDefaultAlpha()
 int RestoreDefaultThresholdVoltages()
 {
 	//to do memcpy
-	memcpy(eps_threshold_voltages,DEFAULT_EPS_THRESHOLD_VOLTAGES,NUMBER_OF_THRESHOLD_VOLTAGES );
+	//we need to do pointerim
+	//memcpy(eps_threshold_voltages,DEFAULT_EPS_THRESHOLD_VOLTAGES,NUMBER_OF_THRESHOLD_VOLTAGES);
 	return 0;
 }
 
