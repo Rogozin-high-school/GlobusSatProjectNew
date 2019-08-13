@@ -208,7 +208,7 @@ int UpdateAlpha(float new_alpha)
     	printf("error: the new paramater is nor right\n");
     	return -2;
     }
-	if(FRAM_write((unsigned char*)&new_alpha,EPS_ALPHA_FILTER_VALUE_ADDR,sizeof(EPS_ALPHA_FILTER_VALUE_SIZE))!=0) //כשלון הכתיבה לפראם
+	if(FRAM_write((unsigned char*)&new_alpha,EPS_ALPHA_FILTER_VALUE_ADDR,EPS_ALPHA_FILTER_VALUE_SIZE)!=0) //כשלון הכתיבה לפראם
 		 	{
 		     printf("error: cannot to write alpha to fram\n");
 		     return -1;
@@ -264,7 +264,7 @@ int GetAlpha(float *alpha)
 int RestoreDefaultAlpha()
 {
 	alpha=DEFAULT_ALPHA_VALUE;
-	if(FRAM_write((unsigned char*)&alpha,EPS_ALPHA_FILTER_VALUE_ADDR,sizeof(EPS_ALPHA_FILTER_VALUE_SIZE))!=0) //כשלון הכתיבה לפראם
+	if(FRAM_write((unsigned char*)&alpha,EPS_ALPHA_FILTER_VALUE_ADDR,EPS_ALPHA_FILTER_VALUE_SIZE)!=0) //כשלון הכתיבה לפראם
 			 	{
 			     printf("error: cannot to write alpha to fram\n");
 			     return -1;
@@ -278,6 +278,8 @@ int RestoreDefaultAlpha()
 
 int RestoreDefaultThresholdVoltages()
 {
+	//to do memcpy
+	memcpy(eps_threshold_voltages,DEFAULT_EPS_THRESHOLD_VOLTAGES,NUMBER_OF_THRESHOLD_VOLTAGES );
 	return 0;
 }
 
