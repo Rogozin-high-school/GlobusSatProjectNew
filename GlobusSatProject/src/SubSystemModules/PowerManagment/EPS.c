@@ -263,7 +263,17 @@ int GetAlpha(float *alpha)
 
 int RestoreDefaultAlpha()
 {
-	return 0;
+	alpha=DEFAULT_ALPHA_VALUE;
+	if(FRAM_write((unsigned char*)&alpha,EPS_ALPHA_FILTER_VALUE_ADDR,sizeof(EPS_ALPHA_FILTER_VALUE_SIZE))!=0) //כשלון הכתיבה לפראם
+			 	{
+			     printf("error: cannot to write alpha to fram\n");
+			     return -1;
+				}
+	else
+	{
+      printf("success to Restore Default Alpha \n");
+	  return 0;
+	}
 }
 
 int RestoreDefaultThresholdVoltages()
