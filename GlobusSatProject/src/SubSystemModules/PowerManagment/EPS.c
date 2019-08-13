@@ -95,7 +95,7 @@ int EPS_Conditioning()
 		 printf("error to get Battery Voltages\n");
 	 }
 
-	//an =FRAM_read((unsigned char *)&,alpha,sizeof(alpha));
+	an =FRAM_read((unsigned char *)&alpha,EPS_ALPHA_FILTER_VALUE_ADDR,sizeof(EPS_ALPHA_FILTER_VALUE_SIZE));
 
 	if (an!=0)
 		{
@@ -202,13 +202,18 @@ int EPS_Conditioning()
 
 int UpdateAlpha(float new_alpha)
 {
+	//******done by diana*****
 
-	if(FRAM_write((unsigned char*)&new_alpha,alpha,sizeof(new_alpha))!=0) //כשלון הכתיבה לפראם
+	if(FRAM_write((unsigned char*)&new_alpha,EPS_ALPHA_FILTER_VALUE_ADDR,sizeof(EPS_ALPHA_FILTER_VALUE_SIZE))!=0) //כשלון הכתיבה לפראם
 		 	{
 				return -1;
 				printf("error: cannot to write alpha to fram\n");
 			}
-			return 0;
+	else
+	{
+		printf("succed:to write alpha to fram\n");
+		return 0;
+	}
 }
 
 int UpdateThresholdVoltages(voltage_t thresh_volts[NUMBER_OF_THRESHOLD_VOLTAGES])
